@@ -1,0 +1,30 @@
+:root {
+  --font-family: "Cormorant Garamond", sans-serif;
+  --second-family: "Cormorant", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Abhaya Libre", sans-serif;
+  --font4: "Convergence", sans-serif;
+  --font5: "Actor", sans-serif;
+  --font6: "Electrolize", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1880px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.btn {
+  font-weight: 400;
+  font-size: 20px;
+  color: #f7f3ee;
+  padding: 10px 47px;
+  border-radius: 50px;
+  background: #543126;
+}
