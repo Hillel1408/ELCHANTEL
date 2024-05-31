@@ -28,3 +28,25 @@ main {
   border-radius: 50px;
   background: #543126;
 }
+.input {
+  font-size: 16px;
+  color: #bbada8;
+  height: 32px;
+  padding: 0 13px;
+  background: rgba(217, 217, 217, 0);
+  border: 1.5px solid #ccbeb1;
+  border-radius: 16px;
+  &::placeholder {
+    font-size: 16px;
+    color: #bbada8;
+  }
+}
+.small-text {
+  font-size: 14px;
+  color: #543126;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
