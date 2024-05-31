@@ -28,6 +28,14 @@ main {
   border-radius: 50px;
   background: #543126;
 }
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #543126;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .input {
   font-size: 16px;
   color: #bbada8;

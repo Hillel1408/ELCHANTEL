@@ -90,8 +90,53 @@
           Создайте личный кабинет на веб-сайте El’chantel.com привязанный к
           вашему электронному адресу
         </p>
-        <button class="header__entry-btn">СОЗДАТЬ УЧЁТНУЮ ЗАПИСЬ</button>
+        <button class="header__entry-btn open-registration">
+          СОЗДАТЬ УЧЁТНУЮ ЗАПИСЬ
+        </button>
       </div>
+    </div>
+    <div class="header__registration">
+      <h2>Регистрация</h2>
+      <form action="#">
+        <div class="header__registration-block">
+          <span>Ваше ФИО</span>
+          <input type="text" class="input" placeholder="Имя" />
+          <input type="text" class="input" placeholder="Фамилия" />
+          <input type="text" class="input" placeholder="Отчество" />
+        </div>
+        <label class="label">
+          Ваш телефон
+          <input
+            type="tel"
+            class="input"
+            placeholder="+7 (___) ___ - __ - __"
+          />
+        </label>
+        <label class="label">
+          Ваш e-mail:
+          <input type="email" class="input" placeholder="mail@mail.ru" />
+        </label>
+        <label class="label">
+          Пароль
+          <input type="password" class="input" />
+        </label>
+        <label class="label">
+          Повторите пароль
+          <input type="password" class="input" />
+        </label>
+        <div class="header__registration-flex">
+          <label class="small-text radio"
+            ><input type="radio" />Согласие с правилами пользования сайта</label
+          >
+          <label class="small-text radio"
+            ><input type="radio" />Согласие на обработку персональных
+            данных</label
+          >
+        </div>
+        <button class="header__entry-btn registration-btn">
+          ЗАРЕГИСТРИРОВАТЬСЯ
+        </button>
+      </form>
     </div>
   </div>
 </div>

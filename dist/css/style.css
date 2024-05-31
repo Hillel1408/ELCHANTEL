@@ -136,6 +136,20 @@ main {
   background: #543126;
 }
 
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #543126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
 .input {
   font-size: 16px;
   color: #bbada8;
@@ -299,7 +313,7 @@ main {
 .header__menu > ul > li > ul > li > a {
   color: #000;
 }
-.header__entry {
+.header__registration > form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,22 +321,64 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 12px;
-  width: 353px;
+  gap: 23px;
+}
+.header__registration-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+}
+.header__registration-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.header__registration-block > span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #543126;
+  margin-bottom: 6px;
+}
+.header__registration, .header__entry {
   position: absolute;
   top: 80px;
   right: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 353px;
+  background: #fbfaf7;
+  border: 1px solid #eae1d3;
+  padding: 22px 17px 24px 17px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #fbfaf7;
-  border: 1px solid #eae1d3;
-  padding: 22px 17px 24px 17px;
 }
-.header__entry.active {
+.header__registration.active, .header__entry.active {
   opacity: 1;
   visibility: visible;
+}
+.header__registration > h2, .header__entry > h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #271e1d;
+  margin-bottom: 22px;
 }
 .header__entry-or {
   margin-top: 30px;
@@ -351,13 +407,6 @@ main {
   border: 1.5px solid #ccbeb1;
   border-radius: 16px;
   background: #eae1d3;
-}
-.header__entry > h2 {
-  font-weight: 700;
-  font-size: 24px;
-  text-align: center;
-  color: #271e1d;
-  margin-bottom: 22px;
 }
 .header__entry > form {
   display: -webkit-box;
