@@ -145,7 +145,7 @@ main {
   background: #fbfaf7;
   z-index: 1;
 }
-.header > div {
+.header > div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +177,80 @@ main {
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 40px;
+  color: #000;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+  background: #fbfaf7;
+  border-top: 1px solid #bbada8;
+  padding: 60px 33px 60px 120px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 525px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.header__menu.active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  visibility: visible;
+}
+.header__menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+}
+.header__menu > ul > li > a {
+  color: #000;
+}
+.header__menu > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.header__menu > ul > li > ul {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 425px;
+  padding: 62px 84px 104px 77px;
+  border: 1px solid #bbada8;
+  background: #f7f3ee;
+  left: 525px;
+  top: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+}
+.header__menu > ul > li > ul > li > a {
   color: #000;
 }
 
