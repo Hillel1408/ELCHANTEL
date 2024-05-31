@@ -203,6 +203,8 @@ main {
   padding: 40px 0;
   background: #fbfaf7;
   z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header > div:first-child {
   display: -webkit-box;
@@ -429,6 +431,12 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header.hide {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .footer__block-1 {
