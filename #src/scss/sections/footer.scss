@@ -2,18 +2,38 @@
   &__block-1 {
     background: #ccbeb1;
     padding: 92px 50px 82px 50px;
+    @media (max-width: 1024px) {
+      padding: 36px 82px;
+    }
+    @media (max-width: 768px) {
+      padding: 36px 40px;
+    }
     & > div {
       max-width: 854px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 60px;
+      @media (max-width: 1024px) {
+        gap: 46px;
+      }
+      @media (max-width: 768px) {
+        gap: 26px;
+      }
+      @media (max-width: 550px) {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+      }
       & > ul {
         font-family: var(--font-family);
         font-size: 20px;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        @media (max-width: 550px) {
+          font-size: 14px;
+        }
         & > li {
           & > a {
             color: #271e1d;
@@ -25,6 +45,12 @@
   &__block-2 {
     background: #eae1d3;
     padding: 45px 50px;
+    @media (max-width: 1024px) {
+      padding: 40px 0px;
+    }
+    @media (max-width: 550px) {
+      padding: 14px 0px;
+    }
     & > div {
       display: flex;
       align-items: center;
@@ -39,6 +65,14 @@
         & > a {
           color: #271e1d;
         }
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          gap: 1px;
+        }
+        @media (max-width: 550px) {
+          font-size: 10px;
+        }
       }
       & > a {
         font-family: var(--second-family);
@@ -46,6 +80,9 @@
         font-size: 20px;
         text-decoration: underline;
         color: #271e1d;
+        @media (max-width: 550px) {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -59,19 +96,37 @@
     & > ul > li > a {
       font-size: 20px;
       color: #271e1d;
+      @media (max-width: 550px) {
+        font-size: 14px;
+      }
     }
     & > ul {
       display: flex;
       gap: 15px;
     }
+    @media (max-width: 550px) {
+      align-items: center;
+    }
   }
   &__btn {
     margin-top: 20px;
+    @media (max-width: 1024px) {
+      margin-top: 0;
+    }
   }
   &__logo {
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 50px;
     color: #271e1d;
+    @media (max-width: 1024px) {
+      font-size: 32px;
+    }
+    @media (max-width: 660px) {
+      font-size: 24px;
+    }
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
   }
 }
