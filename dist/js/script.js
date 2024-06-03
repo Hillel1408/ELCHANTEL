@@ -41,9 +41,6 @@ const scrollPosition = () =>
 const containHide = () => header.classList.contains("hide");
 
 window.addEventListener("scroll", () => {
-  if (scrollPosition() === 0) {
-    header.style.background = "#ccbeb1";
-  }
   if (
     scrollPosition() > lastScroll &&
     !containHide() &&
@@ -51,7 +48,6 @@ window.addEventListener("scroll", () => {
   ) {
     header.classList.add("hide");
   } else if (scrollPosition() < lastScroll && containHide()) {
-    header.style.background = "#fbfaf7";
     header.classList.remove("hide");
   }
 

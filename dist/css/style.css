@@ -226,6 +226,9 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.header.active {
+  background: #fbfaf7;
+}
 @media (max-width: 550px) {
   .header {
     padding: 17px 0;
