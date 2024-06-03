@@ -118,7 +118,9 @@
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 50px;
-    color: #271e1d;
+    & > a {
+      color: #271e1d;
+    }
     @media (max-width: 1024px) {
       font-size: 32px;
     }
