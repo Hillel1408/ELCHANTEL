@@ -1,13 +1,20 @@
 const openMenu = document.querySelector(".open-menu");
 const menu = document.querySelector(".header__menu");
+const closeMenu = document.querySelector(".close-menu");
 openMenu.addEventListener("click", () => {
   menu.classList.toggle("active");
+  document.body.classList.toggle("lock");
+});
+closeMenu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  document.body.classList.toggle("lock");
 });
 
 const openEntry = document.querySelector(".open-entry");
 const entry = document.querySelector(".header__entry");
 openEntry.addEventListener("click", () => {
   entry.classList.toggle("active");
+  document.body.classList.toggle("lock");
 });
 
 const openRegistration = document.querySelector(".open-registration");
@@ -20,6 +27,7 @@ openRegistration.addEventListener("click", () => {
 const registrationBtn = document.querySelector(".registration-btn");
 registrationBtn.addEventListener("click", () => {
   registration.classList.toggle("active");
+  document.body.classList.toggle("lock");
 });
 
 let lastScroll = 0;

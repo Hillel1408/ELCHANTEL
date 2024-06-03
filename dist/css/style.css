@@ -35,7 +35,7 @@ section {
 html,
 body {
   height: 100%;
-  min-width: 350px;
+  min-width: 320px;
   cursor: default;
   line-height: normal;
 }
@@ -115,6 +115,10 @@ body {
           flex-direction: column;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -148,6 +152,7 @@ main {
 @media (max-width: 550px) {
   .btn {
     font-size: 16px;
+    padding: 10px 17px;
   }
 }
 
@@ -468,6 +473,18 @@ main {
 }
 .header__menu > ul > li > a {
   color: #000;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  position: relative;
+}
+.header__menu > ul > li > a:hover {
+  padding-left: 13px;
+  color: #543126;
+}
+.header__menu > ul > li > a:hover::before {
+  content: "-";
+  position: absolute;
+  left: 0;
 }
 .header__menu > ul > li:hover > ul {
   opacity: 1;
@@ -665,6 +682,14 @@ main {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+@media (max-width: 750px) {
+  .header.hide {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    display: none;
+  }
 }
 
 .footer__block-1 {
@@ -865,6 +890,17 @@ main {
   padding-top: 290px;
   padding-bottom: 43px;
 }
+@media (max-width: 1024px) {
+  .intro {
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: 550px) {
+  .intro {
+    padding-top: 200px;
+    padding-bottom: 49px;
+  }
+}
 .intro > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -880,13 +916,49 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 550px) {
+  .intro > div > a {
+    background: rgba(234, 225, 211, 0.48);
+    color: #271e1d;
+    font-size: 13px;
+  }
+}
 .intro > div > img {
   margin-bottom: 133px;
+}
+@media (max-width: 1024px) {
+  .intro > div > img {
+    margin-bottom: 140px;
+    width: 250px;
+    height: 325px;
+  }
+}
+@media (max-width: 550px) {
+  .intro > div > img {
+    margin-bottom: 77px;
+    width: 284px;
+    height: 369px;
+  }
 }
 
 .collection {
   padding: 38px 50px 88px 50px;
   background: #eae1d3;
+}
+@media (max-width: 1024px) {
+  .collection {
+    padding: 38px 0 77px 0;
+  }
+}
+@media (max-width: 550px) {
+  .collection {
+    padding: 20px 0 65px 0;
+  }
+}
+@media (max-width: 550px) {
+  .collection > div {
+    padding: 0;
+  }
 }
 .collection > div > h2 {
   font-weight: 400;
@@ -895,12 +967,30 @@ main {
   color: #000;
   margin-bottom: 38px;
 }
+@media (max-width: 550px) {
+  .collection > div > h2 {
+    font-size: 24px;
+    margin-bottom: 17px;
+  }
+}
 .collection > div > div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 800px) {
+  .collection > div > div {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .collection > div > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .collection > div > div > div {
   position: relative;
@@ -910,6 +1000,16 @@ main {
   height: 554px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .collection > div > div > div > img {
+    height: 309px;
+  }
+}
+@media (max-width: 550px) {
+  .collection > div > div > div > img {
+    height: 224px;
+  }
 }
 .collection > div > div > div > span {
   font-size: 40px;
@@ -928,6 +1028,19 @@ main {
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 1024px) {
+  .blog {
+    height: 1059px;
+    background-image: url("../img/img-5.png");
+  }
+}
+@media (max-width: 550px) {
+  .blog {
+    height: 723px;
+    background-image: url("../img/img-6.png");
+    background-position: 52.3% center;
+  }
+}
 .blog > div {
   height: 100%;
   display: -webkit-box;
@@ -945,6 +1058,16 @@ main {
           justify-content: flex-end;
   padding-bottom: 111px;
 }
+@media (max-width: 1024px) {
+  .blog > div {
+    padding-bottom: 38px;
+  }
+}
+@media (max-width: 550px) {
+  .blog > div {
+    padding-bottom: 67px;
+  }
+}
 .blog > div > p {
   margin-top: 25px;
   font-family: var(--second-family);
@@ -952,4 +1075,27 @@ main {
   font-size: 50px;
   text-align: center;
   color: #000;
+}
+@media (max-width: 1024px) {
+  .blog > div > p {
+    font-size: 36px;
+  }
+}
+@media (max-width: 550px) {
+  .blog > div > p {
+    font-size: 32px;
+    margin-top: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .blog > div > img {
+    width: 146px;
+    height: 189px;
+  }
+}
+@media (max-width: 550px) {
+  .blog > div > img {
+    width: 115px;
+    height: 149px;
+  }
 }

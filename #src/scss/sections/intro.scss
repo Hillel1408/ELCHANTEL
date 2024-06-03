@@ -2,13 +2,37 @@
   background: #ccbeb1;
   padding-top: 290px;
   padding-bottom: 43px;
+  @media (max-width: 1024px) {
+    padding-bottom: 72px;
+  }
+  @media (max-width: 550px) {
+    padding-top: 200px;
+    padding-bottom: 49px;
+  }
   & > div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 550px) {
+      & > a {
+        background: rgba(234, 225, 211, 0.48);
+        color: #271e1d;
+        font-size: 13px;
+      }
+    }
     & > img {
       margin-bottom: 133px;
+      @media (max-width: 1024px) {
+        margin-bottom: 140px;
+        width: 250px;
+        height: 325px;
+      }
+      @media (max-width: 550px) {
+        margin-bottom: 77px;
+        width: 284px;
+        height: 369px;
+      }
     }
   }
 }

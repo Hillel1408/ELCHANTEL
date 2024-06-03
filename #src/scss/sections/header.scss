@@ -204,6 +204,17 @@
       & > li {
         & > a {
           color: #000;
+          transition: 0.1s;
+          position: relative;
+          &:hover {
+            padding-left: 13px;
+            color: #543126;
+            &::before {
+              content: "-";
+              position: absolute;
+              left: 0;
+            }
+          }
         }
         &:hover {
           & > ul {
@@ -358,4 +369,8 @@
 }
 .header.hide {
   transform: translateY(-100%);
+  @media (max-width: 750px) {
+    transform: none;
+    display: none;
+  }
 }
