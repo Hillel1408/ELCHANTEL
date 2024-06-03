@@ -19,6 +19,12 @@ main {
   max-width: 1880px;
   padding: 0 50px;
   margin: 0 auto;
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 550px) {
+    padding: 0 17px;
+  }
 }
 .btn {
   font-weight: 400;
