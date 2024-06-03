@@ -13,7 +13,9 @@ closeMenu.addEventListener("click", () => {
 const openEntry = document.querySelector(".open-entry");
 const entry = document.querySelector(".header__entry");
 openEntry.addEventListener("click", () => {
-  entry.classList.toggle("active");
+  if (registration.classList.contains("active")) {
+    registration.classList.remove("active");
+  } else entry.classList.toggle("active");
   document.body.classList.toggle("lock");
 });
 
