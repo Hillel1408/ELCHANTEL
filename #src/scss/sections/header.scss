@@ -207,6 +207,11 @@
         }
       }
       & > li {
+        &.active {
+          & > ul {
+            display: flex;
+          }
+        }
         & > a {
           color: #000;
           transition: 0.1s;
@@ -214,10 +219,16 @@
           &:hover {
             padding-left: 13px;
             color: #543126;
+            @media (max-width: 550px) {
+              padding-left: 0;
+            }
             &::before {
               content: "-";
               position: absolute;
               left: 0;
+              @media (max-width: 550px) {
+                display: none;
+              }
             }
           }
         }
@@ -264,6 +275,7 @@
             font-weight: 300;
             font-size: 15px;
             align-items: center;
+            display: none;
           }
           & > li {
             & > a {

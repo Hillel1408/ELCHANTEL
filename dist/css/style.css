@@ -476,6 +476,11 @@ main {
     padding-top: 50px;
   }
 }
+.header__menu > ul > li.active > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .header__menu > ul > li > a {
   color: #000;
   -webkit-transition: 0.1s;
@@ -486,10 +491,20 @@ main {
   padding-left: 13px;
   color: #543126;
 }
+@media (max-width: 550px) {
+  .header__menu > ul > li > a:hover {
+    padding-left: 0;
+  }
+}
 .header__menu > ul > li > a:hover::before {
   content: "-";
   position: absolute;
   left: 0;
+}
+@media (max-width: 550px) {
+  .header__menu > ul > li > a:hover::before {
+    display: none;
+  }
 }
 .header__menu > ul > li:hover > ul {
   opacity: 1;
@@ -546,6 +561,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: none;
   }
 }
 .header__menu > ul > li > ul > li > a {

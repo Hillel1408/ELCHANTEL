@@ -76,3 +76,13 @@ window.addEventListener("scroll", () => {
 
   lastScroll = scrollPosition();
 });
+
+const headerMenu = document.querySelectorAll(
+  ".header__menu > ul:first-child > li"
+);
+headerMenu.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    item.classList.toggle("active");
+  });
+});
