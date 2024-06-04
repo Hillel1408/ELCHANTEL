@@ -395,6 +395,23 @@ main {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-height: 900px) {
+  .header__menu {
+    height: calc(100vh - 120px);
+    overflow: auto;
+  }
+}
+@media (max-height: 900px) and (max-width: 1024px) {
+  .header__menu {
+    height: calc(100vh - 116px);
+  }
+}
+@media (max-height: 900px) and (max-width: 550px) {
+  .header__menu {
+    height: auto;
+    overflow: visible;
+  }
+}
 .header__menu > button {
   display: none;
 }
@@ -515,13 +532,13 @@ main {
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   width: 425px;
   padding: 62px 84px 104px 77px;
   border: 1px solid #bbada8;
   background: #f7f3ee;
   left: 525px;
-  top: -1px;
+  top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,10 +551,27 @@ main {
   font-weight: 600;
   font-size: 20px;
 }
+@media (max-height: 900px) {
+  .header__menu > ul > li > ul {
+    height: calc(100vh - 120px);
+    overflow: auto;
+  }
+}
+@media (max-height: 900px) and (max-width: 1024px) {
+  .header__menu > ul > li > ul {
+    height: calc(100vh - 116px);
+  }
+}
+@media (max-height: 900px) and (max-width: 550px) {
+  .header__menu > ul > li > ul {
+    height: auto;
+    overflow: visible;
+  }
+}
 @media (max-width: 1024px) {
   .header__menu > ul > li > ul {
     width: 50vw;
-    top: -1px;
+    top: 116px;
     left: 50vw;
     padding: 60px 33px 60px 81px;
   }
@@ -566,6 +600,17 @@ main {
 }
 .header__menu > ul > li > ul > li > a {
   color: #000;
+}
+@media (max-height: 900px) {
+  .header__registration {
+    height: calc(100vh - 120px);
+    overflow: auto;
+  }
+}
+@media (max-height: 900px) and (max-width: 1024px) {
+  .header__registration {
+    height: calc(100vh - 116px);
+  }
 }
 .header__registration > form {
   display: -webkit-box;
