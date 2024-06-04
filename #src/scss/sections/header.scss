@@ -150,6 +150,17 @@
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
+    @media (max-height: 900px) {
+      height: calc(100vh - 120px);
+      overflow: auto;
+    }
+    @media (max-height: 900px) and (max-width: 1024px) {
+      height: calc(100vh - 116px);
+    }
+    @media (max-height: 900px) and (max-width: 550px) {
+      height: auto;
+      overflow: visible;
+    }
     & > button {
       display: none;
       @media (max-width: 550px) {
@@ -242,22 +253,33 @@
           transition: 0.3s;
           opacity: 0;
           visibility: hidden;
-          position: absolute;
+          position: fixed;
           width: 425px;
           padding: 62px 84px 104px 77px;
           border: 1px solid #bbada8;
           background: #f7f3ee;
           left: 525px;
-          top: -1px;
+          top: 120px;
           display: flex;
           flex-direction: column;
           gap: 20px;
           font-family: var(--font-family);
           font-weight: 600;
           font-size: 20px;
+          @media (max-height: 900px) {
+            height: calc(100vh - 120px);
+            overflow: auto;
+          }
+          @media (max-height: 900px) and (max-width: 1024px) {
+            height: calc(100vh - 116px);
+          }
+          @media (max-height: 900px) and (max-width: 550px) {
+            height: auto;
+            overflow: visible;
+          }
           @media (max-width: 1024px) {
             width: calc(100vw / 2);
-            top: -1px;
+            top: 116px;
             left: calc(100vw / 2);
             padding: 60px 33px 60px 81px;
           }
@@ -287,6 +309,13 @@
     }
   }
   &__registration {
+    @media (max-height: 900px) {
+      height: calc(100vh - 120px);
+      overflow: auto;
+    }
+    @media (max-height: 900px) and (max-width: 1024px) {
+      height: calc(100vh - 116px);
+    }
     & > form {
       display: flex;
       flex-direction: column;
