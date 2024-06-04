@@ -1,35 +1,54 @@
 const openMenu = document.querySelector(".open-menu");
 const menu = document.querySelector(".header__menu");
 const closeMenu = document.querySelector(".close-menu");
+
+const func = () => {
+  if (
+    menu.classList.contains("active") ||
+    entry.classList.contains("active") ||
+    registration.classList.contains("active")
+  ) {
+    header.classList.add("active");
+  } else header.classList.remove("active");
+};
+
 openMenu.addEventListener("click", () => {
   menu.classList.toggle("active");
   document.body.classList.toggle("lock");
+  func();
 });
 closeMenu.addEventListener("click", () => {
   menu.classList.toggle("active");
   document.body.classList.toggle("lock");
+  func();
 });
 
 const openEntry = document.querySelector(".open-entry");
 const entry = document.querySelector(".header__entry");
+
 openEntry.addEventListener("click", () => {
   if (registration.classList.contains("active")) {
     registration.classList.remove("active");
   } else entry.classList.toggle("active");
   document.body.classList.toggle("lock");
+  func();
 });
 
 const openRegistration = document.querySelector(".open-registration");
 const registration = document.querySelector(".header__registration");
+
 openRegistration.addEventListener("click", () => {
   entry.classList.toggle("active");
   registration.classList.toggle("active");
+  func();
 });
 
 const registrationBtn = document.querySelector(".registration-btn");
+
 registrationBtn.addEventListener("click", () => {
   registration.classList.toggle("active");
   document.body.classList.toggle("lock");
+  func();
 });
 
 let lastScroll = 0;
