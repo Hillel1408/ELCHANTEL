@@ -8,7 +8,7 @@
   z-index: 1;
   transition: 0.3s;
   &.active {
-    background: #fbfaf7;
+    background: #fbfaf7 !important;
   }
   @media (max-width: 550px) {
     padding: 17px 0;

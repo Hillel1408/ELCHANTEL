@@ -227,7 +227,7 @@ main {
   transition: 0.3s;
 }
 .header.active {
-  background: #fbfaf7;
+  background: #fbfaf7 !important;
 }
 @media (max-width: 550px) {
   .header {
