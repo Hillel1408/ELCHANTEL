@@ -280,6 +280,10 @@ main {
     height: 29px;
   }
 }
+.header__block-1 > button:nth-child(1) > img {
+  width: 21px;
+  height: 22px;
+}
 @media (max-width: 550px) {
   .header__block-1 > button:nth-child(1) {
     font-size: 15px;
@@ -289,6 +293,10 @@ main {
     width: 19px;
     height: 20px;
   }
+}
+.header__block-1 > button:nth-child(3) > img {
+  width: 23px;
+  height: 23px;
 }
 @media (max-width: 550px) {
   .header__block-1 > button:nth-child(3) {
@@ -337,6 +345,18 @@ main {
   .header__block-2.desktop {
     display: none;
   }
+}
+.header__block-3 > button:nth-child(1) > img {
+  width: 27px;
+  height: 25px;
+}
+.header__block-3 > button:nth-child(2) > img {
+  width: 25px;
+  height: 25px;
+}
+.header__block-3 > button:nth-child(3) > img {
+  width: 23px;
+  height: 25px;
 }
 @media (max-width: 1024px) {
   .header__block-3 > button {
@@ -993,6 +1013,8 @@ main {
 }
 .intro > div > img {
   margin-bottom: 133px;
+  width: 284px;
+  height: 369px;
 }
 @media (max-width: 1024px) {
   .intro > div > img {
@@ -1154,6 +1176,10 @@ main {
     font-size: 32px;
     margin-top: 14px;
   }
+}
+.blog > div > img {
+  width: 240px;
+  height: 311px;
 }
 @media (max-width: 1024px) {
   .blog > div > img {

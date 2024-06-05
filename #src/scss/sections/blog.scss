@@ -41,6 +41,8 @@
       }
     }
     & > img {
+      width: 240px;
+      height: 311px;
       @media (max-width: 1024px) {
         width: 146px;
         height: 189px;
