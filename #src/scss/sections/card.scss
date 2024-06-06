@@ -90,6 +90,78 @@
         }
       }
     }
+    &-2 {
+      position: relative;
+      & > h3 {
+        font-size: 25px;
+        color: #000;
+        margin-bottom: 81px;
+      }
+      & > ul {
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 25px;
+        padding-left: 20px;
+        & > li {
+          list-style-type: disc;
+        }
+      }
+      & > p {
+        font-size: 15px;
+        color: #000;
+      }
+      & > button {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    &-3 {
+      position: relative;
+      & > h3 {
+        font-size: 25px;
+        color: #000;
+        margin-bottom: 81px;
+      }
+      & > button {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      & > p {
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      & > div {
+        padding-top: 20px;
+        & > p {
+          font-weight: 600;
+          font-size: 16px;
+          color: #000;
+          margin-bottom: 20px;
+        }
+        & > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          & > li {
+            display: flex;
+            gap: 5px;
+            font-size: 16px;
+            color: #000;
+            & > span {
+              &:nth-child(2) {
+                flex: 1 1 auto;
+                border-bottom: 0.5px dashed #000;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &__color {
     margin-top: 19px;
