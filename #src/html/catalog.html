@@ -1,21 +1,7 @@
 <div class="catalog">
   <div class="container">
     <div>
-      @@for (var i = 0; i < 16; i++) {
-      <div class="catalog__item">
-        <div>
-          <!-- <img src="" alt="" /> -->
-          <div class="catalog__item-block-1">
-            <span>COUTURE COLLECTIONS</span
-            ><button><img src="img/icon-3.svg" alt="" /></button>
-          </div>
-          <div class="catalog__item-block-2">
-            <span>EL’CHANTEL’</span><span>COUTURE COLLECTIONS</span>
-          </div>
-        </div>
-        <div><span>10 000 ₽</span><span>Романтичный образ</span></div>
-      </div>
-      }
+      @@for (var i = 0; i < 16; i++) { @@include('./catalog-item.html') }
     </div>
     <button>ПОКАЗАТЬ ЕЩЁ</button>
   </div>
