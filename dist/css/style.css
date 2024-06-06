@@ -1283,3 +1283,95 @@ main {
     height: 149px;
   }
 }
+
+.catalog {
+  background: #f7f3ee;
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.catalog > div {
+  text-align: center;
+}
+.catalog > div > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 96px;
+  margin-bottom: 96px;
+}
+.catalog > div > button {
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50px;
+  height: 63px;
+  background-color: transparent;
+  width: 328px;
+}
+.catalog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.catalog__item > div {
+  position: relative;
+}
+.catalog__item > div:first-child {
+  height: 560px;
+  background: #d9d9d9;
+}
+.catalog__item > div:first-child > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.catalog__item > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  color: #000;
+}
+.catalog__item-block-1, .catalog__item-block-2 {
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog__item-block-1 {
+  top: 3px;
+}
+.catalog__item-block-1 > button {
+  background-color: transparent;
+}
+.catalog__item-block-1 > button > img {
+  width: 25px;
+  height: 23px;
+}
+.catalog__item-block-2 {
+  bottom: 3px;
+}
