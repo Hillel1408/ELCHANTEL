@@ -1475,13 +1475,19 @@ main {
   width: 27px;
   height: 25px;
 }
-.card__tab-2 {
+.card__tab-2, .card__tab-3, .card__tab-4 {
   position: relative;
 }
-.card__tab-2 > h3 {
+.card__tab-2 > h3, .card__tab-3 > h3, .card__tab-4 > h3 {
   font-size: 25px;
   color: #000;
   margin-bottom: 81px;
+}
+.card__tab-2 > button, .card__tab-3 > button, .card__tab-4 > button {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .card__tab-2 > ul {
   font-size: 15px;
@@ -1495,26 +1501,6 @@ main {
 .card__tab-2 > p {
   font-size: 15px;
   color: #000;
-}
-.card__tab-2 > button {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.card__tab-3 {
-  position: relative;
-}
-.card__tab-3 > h3 {
-  font-size: 25px;
-  color: #000;
-  margin-bottom: 81px;
-}
-.card__tab-3 > button {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 .card__tab-3 > p {
   font-size: 15px;
@@ -1553,6 +1539,19 @@ main {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   border-bottom: 0.5px dashed #000;
+}
+.card__tab-4 > p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.card__tab-4 > ul {
+  font-size: 16px;
+  color: #000;
+  padding-left: 20px;
+}
+.card__tab-4 > ul > li {
+  list-style-type: disc;
 }
 .card__color {
   margin-top: 19px;
