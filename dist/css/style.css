@@ -1441,6 +1441,12 @@ main {
 .card__list > li > a {
   color: #000;
 }
+.card__tab {
+  display: none;
+}
+.card__tab.active {
+  display: block;
+}
 .card__tab-1 > button {
   font-size: 24px;
   text-align: center;
