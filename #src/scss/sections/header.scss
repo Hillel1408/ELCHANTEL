@@ -359,7 +359,6 @@
     }
   }
   &__cart {
-    display: none;
     position: absolute;
     top: 80px;
     border: 2px solid #ccbeb1;
@@ -369,11 +368,25 @@
     right: 0;
     max-height: calc(100vh - 120px);
     overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
     & > h2 {
       font-size: 25px;
       text-align: center;
       color: #000;
       margin-bottom: 6px;
+    }
+    &-total {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 14px;
+      font-size: 20px;
+      color: #000;
     }
     & > div {
       padding-top: 14px;

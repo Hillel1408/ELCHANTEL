@@ -659,7 +659,6 @@ main {
   margin-bottom: 6px;
 }
 .header__cart {
-  display: none;
   position: absolute;
   top: 80px;
   border: 2px solid #ccbeb1;
@@ -669,12 +668,31 @@ main {
   right: 0;
   max-height: calc(100vh - 120px);
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__cart.active {
+  opacity: 1;
+  visibility: visible;
 }
 .header__cart > h2 {
   font-size: 25px;
   text-align: center;
   color: #000;
   margin-bottom: 6px;
+}
+.header__cart-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 14px;
+  font-size: 20px;
+  color: #000;
 }
 .header__cart > div {
   padding-top: 14px;
