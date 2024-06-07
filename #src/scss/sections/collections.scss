@@ -1,0 +1,31 @@
+.collections {
+  background: #f7f3ee;
+  padding: 201px 0 88px 0;
+  height: 100%;
+  &__grid {
+    text-align: center;
+    & > h1 {
+      font-size: 24px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 54px;
+    }
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 96px;
+      margin-bottom: 76px;
+    }
+    & > button {
+      font-size: 24px;
+      text-align: center;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 50px;
+      height: 63px;
+      background-color: transparent;
+      width: 328px;
+    }
+  }
+}

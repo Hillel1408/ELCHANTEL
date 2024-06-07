@@ -1847,3 +1847,39 @@ main {
       -ms-transform: translateX(2px);
           transform: translateX(2px);
 }
+
+.collections {
+  background: #f7f3ee;
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.collections__grid {
+  text-align: center;
+}
+.collections__grid > h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 54px;
+}
+.collections__grid > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 96px;
+  margin-bottom: 76px;
+}
+.collections__grid > button {
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50px;
+  height: 63px;
+  background-color: transparent;
+  width: 328px;
+}
