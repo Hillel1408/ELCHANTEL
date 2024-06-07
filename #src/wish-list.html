@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body onclick>
     @@include('./html/header.html')
     <main>@@include('./html/wish-list.html')</main>
     @@include('./html/footer.html')
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
       const items = document.querySelectorAll(".wish-list__item");
@@ -20,6 +22,19 @@
           item.classList.toggle("active");
         });
       });
+      const sliders = document.querySelectorAll(".wish-list__slider");
+      sliders.forEach((item) => {
+        let swiper = new Swiper(item, {
+          slidesPerView: "auto",
+          navigation: {
+            nextEl: ".wish-list__slider-button-next",
+            prevEl: ".wish-list__slider-button-prev",
+          },
+        });
+      });
+      function doSomethingCool(event) {
+        event.stopPropagation();
+      }
     </script>
   </body>
 </html>

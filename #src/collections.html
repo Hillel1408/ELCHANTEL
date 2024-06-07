@@ -7,11 +7,28 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body onclick>
     @@include('./html/header.html')
     <main>@@include('./html/collections.html')</main>
     @@include('./html/footer.html')
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const swiperAboutService = new Swiper(".collections__slider", {
+        loop: "true",
+        spaceBetween: 166,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        slidesPerView: 1,
+        watchSlidesProgress: true,
+        on: {
+          click() {
+            swiperAboutService.slideTo(this.clickedIndex);
+          },
+        },
+      });
+    </script>
   </body>
 </html>

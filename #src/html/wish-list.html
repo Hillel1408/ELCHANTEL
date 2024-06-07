@@ -3,11 +3,34 @@
     @@for (var i = 0; i < 6; i++) {
     <div class="wish-list__item">
       <div class="wish-list__item-front">
-        <div>
+        <div class="wish-list__slider">
           <div class="wish-list__item-head">
             <span>COUTURE COLLECTIONS</span
             ><button>Удалить<img src="img/icon-8.svg" alt="" /></button>
           </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide wish-list__slider-slide">
+              <img src="img/img-1.png" alt="" />
+            </div>
+            <div class="swiper-slide wish-list__slider-slide">
+              <img src="img/img-1.png" alt="" />
+            </div>
+            <div class="swiper-slide wish-list__slider-slide">
+              <img src="img/img-1.png" alt="" />
+            </div>
+          </div>
+          <button
+            class="wish-list__slider-button-prev"
+            onclick="doSomethingCool(event);"
+          >
+            <img src="img/icon-11.svg" alt="" />
+          </button>
+          <button
+            class="wish-list__slider-button-next"
+            onclick="doSomethingCool(event);"
+          >
+            <img src="img/icon-12.svg" alt="" />
+          </button>
         </div>
         <div>EL’CHANTEL’<img src="img/icon-9.svg" alt="" /></div>
       </div>

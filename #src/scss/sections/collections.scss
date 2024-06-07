@@ -2,8 +2,10 @@
   background: #f7f3ee;
   padding: 201px 0 88px 0;
   height: 100%;
+  overflow: hidden;
   &__grid {
     text-align: center;
+    margin-top: 87px;
     & > h1 {
       font-size: 24px;
       text-align: center;
@@ -26,6 +28,18 @@
       height: 63px;
       background-color: transparent;
       width: 328px;
+    }
+  }
+  &__slider {
+    max-width: 329px;
+    margin: 0 auto;
+    height: 530px;
+    &-slide {
+      border-radius: 235px 235px 0 0;
+
+      background: #d9d9d9;
+      &.swiper-slide-active {
+      }
     }
   }
 }
