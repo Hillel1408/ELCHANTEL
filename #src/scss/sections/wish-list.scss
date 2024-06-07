@@ -1,0 +1,177 @@
+.wish-list {
+  background: #f7f3ee;
+  padding: 201px 0 88px 0;
+  height: 100%;
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 174px;
+  }
+  &__item {
+    position: relative;
+    cursor: pointer;
+    &.active {
+      & > .wish-list__item-front {
+        transform: perspective(600px) rotateY(-180deg);
+      }
+      & > .wish-list__item-back {
+        transform: perspective(600px) rotateY(0deg);
+      }
+    }
+    &-buttons {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      & > button {
+        &:nth-child(1) {
+          font-size: 20px;
+          text-align: center;
+          color: #fbfaf7;
+          border: 2px solid #543126;
+          border-radius: 34px;
+          height: 45px;
+          background: #543126;
+          grid-column: span 2;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          font-size: 22px;
+          text-align: center;
+          color: #000;
+          border: 1px solid #000;
+          border-radius: 34px;
+          height: 45px;
+          background-color: transparent;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+        }
+        &:nth-child(2) {
+          & > img {
+            width: 23px;
+            height: 24px;
+          }
+        }
+        &:nth-child(3) {
+          & > img {
+            width: 22px;
+            height: 21px;
+          }
+        }
+      }
+    }
+    &-front,
+    &-back {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: transform 0.6s linear;
+      top: 0;
+    }
+    &-front {
+      transform: perspective(600px) rotateY(0deg);
+    }
+    &-back {
+      transform: perspective(600px) rotateY(180deg);
+      background: #d9d9d9;
+      padding: 12px 21px 32px 21px;
+      display: flex;
+      flex-direction: column;
+      & > span {
+        font-size: 16px;
+        color: #000;
+      }
+      & > p {
+        font-size: 25px;
+        color: #000;
+        margin-top: 26px;
+        margin-bottom: 48px;
+      }
+      & > ul {
+        font-size: 25px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        & > li {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    &-front {
+      position: relative;
+      & > div {
+        &:first-child {
+          height: 596px;
+          background: #d9d9d9;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &:last-child {
+          background: #e7e5e3;
+          font-size: 25px;
+          color: #000;
+          padding: 54px 7px 77px 7px;
+          position: relative;
+          & > img {
+            position: absolute;
+            bottom: 9px;
+            right: 9px;
+          }
+        }
+      }
+    }
+    &-head {
+      position: absolute;
+      top: 9px;
+      left: 5px;
+      right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > span {
+        font-size: 16px;
+        color: #000;
+      }
+      & > button {
+        font-size: 16px;
+        color: transparent;
+        border: 2px solid #000;
+        border-radius: 16px;
+        max-width: 32px;
+        height: 32px;
+        background: rgba(247, 243, 238, 0.51);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 16px;
+        transition: max-width 0.3s;
+        overflow: hidden;
+        position: relative;
+        gap: 5px;
+        & > img {
+          transform: translateX(-2px);
+          position: absolute;
+          left: 0;
+        }
+        &:hover {
+          max-width: 110px;
+          color: #000;
+          & > img {
+            position: static;
+            transform: translateX(2px);
+          }
+        }
+      }
+    }
+  }
+}
