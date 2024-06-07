@@ -2,9 +2,11 @@
   <div class="container">
     <div class="collections__slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide collections__slider-slide">1</div>
-        <div class="swiper-slide collections__slider-slide">2</div>
-        <div class="swiper-slide collections__slider-slide">3</div>
+        @@for (var i = 0; i < 4; i++) {
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        }
       </div>
     </div>
     <div class="collections__grid">

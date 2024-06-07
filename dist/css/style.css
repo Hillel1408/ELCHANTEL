@@ -1917,11 +1917,20 @@ main {
   width: 328px;
 }
 .collections__slider {
-  max-width: 329px;
   margin: 0 auto;
   height: 530px;
+  padding-top: 94px;
 }
-.collections__slider-slide {
+.collections__slider-slide > div {
   border-radius: 235px 235px 0 0;
   background: #d9d9d9;
+  height: 100%;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.collections__slider-slide.swiper-slide-active > div {
+  -webkit-transform: scale(1.2) translateY(-36px);
+      -ms-transform: scale(1.2) translateY(-36px);
+          transform: scale(1.2) translateY(-36px);
 }

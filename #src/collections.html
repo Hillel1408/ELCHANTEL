@@ -17,12 +17,11 @@
     <script src="js/script.js"></script>
     <script>
       const swiperAboutService = new Swiper(".collections__slider", {
-        loop: "true",
+        loop: true,
         spaceBetween: 166,
         centeredSlides: true,
         centeredSlidesBounds: true,
-        slidesPerView: 1,
-        watchSlidesProgress: true,
+        slidesPerView: 3,
         on: {
           click() {
             swiperAboutService.slideTo(this.clickedIndex);

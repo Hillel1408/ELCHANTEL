@@ -31,14 +31,20 @@
     }
   }
   &__slider {
-    max-width: 329px;
     margin: 0 auto;
     height: 530px;
+    padding-top: 94px;
     &-slide {
-      border-radius: 235px 235px 0 0;
-
-      background: #d9d9d9;
+      & > div {
+        border-radius: 235px 235px 0 0;
+        background: #d9d9d9;
+        height: 100%;
+        transform: scale(1);
+      }
       &.swiper-slide-active {
+        & > div {
+          transform: scale(1.2) translateY(-36px);
+        }
       }
     }
   }
