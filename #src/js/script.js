@@ -6,7 +6,8 @@ const func = () => {
   if (
     menu.classList.contains("active") ||
     entry.classList.contains("active") ||
-    registration.classList.contains("active")
+    registration.classList.contains("active") ||
+    cart.classList.contains("active")
   ) {
     header.classList.add("active");
   } else header.classList.remove("active");
@@ -47,6 +48,15 @@ const registrationBtn = document.querySelector(".registration-btn");
 
 registrationBtn.addEventListener("click", () => {
   registration.classList.toggle("active");
+  document.body.classList.toggle("lock");
+  func();
+});
+
+const openCart = document.querySelector(".open-cart");
+const cart = document.querySelector(".header__cart");
+
+openCart.addEventListener("click", () => {
+  cart.classList.toggle("active");
   document.body.classList.toggle("lock");
   func();
 });
