@@ -2,11 +2,29 @@
   background: #f7f3ee;
   padding: 201px 0 88px 0;
   height: 100%;
+  @media (max-width: 1024px) {
+    padding: 150px 0 88px 0;
+  }
+  @media (max-width: 550px) {
+    padding: 70px 0 38px 0;
+  }
   & > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 174px;
+    @media (max-width: 1420px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 70px;
+      row-gap: 70px;
+    }
+    @media (max-width: 800px) {
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__slider {
     &:hover {
@@ -41,7 +59,6 @@
     }
   }
   &__item {
-    max-width: 580px;
     position: relative;
     cursor: pointer;
     &.active {
@@ -57,6 +74,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 25px;
+      @media (max-width: 550px) {
+        margin: auto -35px -12px -35px;
+        background: rgba(247, 243, 238, 0.48);
+        padding: 16px 30px 11px 30px;
+        gap: 8px;
+      }
       & > button {
         &:nth-child(1) {
           font-size: 20px;
@@ -67,6 +90,11 @@
           height: 45px;
           background: #543126;
           grid-column: span 2;
+          @media (max-width: 550px) {
+            font-size: 12px;
+            border-radius: 33px;
+            height: 24px;
+          }
         }
         &:nth-child(2),
         &:nth-child(3) {
@@ -81,17 +109,30 @@
           gap: 10px;
           justify-content: center;
           align-items: center;
+          @media (max-width: 550px) {
+            font-size: 12px;
+            border-radius: 33px;
+            height: 24px;
+          }
         }
         &:nth-child(2) {
           & > img {
             width: 23px;
             height: 24px;
+            @media (max-width: 550px) {
+              width: 11px;
+              height: 12px;
+            }
           }
         }
         &:nth-child(3) {
           & > img {
             width: 22px;
             height: 21px;
+            @media (max-width: 550px) {
+              width: 13px;
+              height: 13px;
+            }
           }
         }
       }
@@ -115,15 +156,27 @@
       padding: 12px 21px 32px 21px;
       display: flex;
       flex-direction: column;
+      @media (max-width: 550px) {
+        background: #eae1d3;
+        padding: 12px 35px 12px 35px;
+      }
       & > span {
         font-size: 16px;
         color: #000;
+        @media (max-width: 550px) {
+          font-size: 13px;
+        }
       }
       & > p {
         font-size: 25px;
         color: #000;
         margin-top: 26px;
         margin-bottom: 48px;
+        @media (max-width: 550px) {
+          font-size: 12px;
+          margin-bottom: 13px;
+          margin-top: 0;
+        }
       }
       & > ul {
         font-size: 25px;
@@ -131,6 +184,10 @@
         display: flex;
         flex-direction: column;
         gap: 14px;
+        @media (max-width: 550px) {
+          font-size: 15px;
+          gap: 26px;
+        }
         & > li {
           display: flex;
           justify-content: space-between;
@@ -143,6 +200,12 @@
         &:first-child {
           height: 596px;
           background: #d9d9d9;
+          @media (max-width: 1420px) {
+            height: 449px;
+          }
+          @media (max-width: 550px) {
+            height: 333px;
+          }
           & > img {
             width: 100%;
             height: 100%;
@@ -159,6 +222,20 @@
             position: absolute;
             bottom: 9px;
             right: 9px;
+            @media (max-width: 550px) {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          @media (max-width: 550px) {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            padding: 13px 7px 37px 35px;
+            font-size: 15px;
+            background: rgba(247, 243, 238, 0.48);
           }
         }
       }
@@ -175,6 +252,9 @@
       & > span {
         font-size: 16px;
         color: #000;
+        @media (max-width: 550px) {
+          font-size: 12px;
+        }
       }
       & > button {
         font-size: 16px;
@@ -192,6 +272,9 @@
         overflow: hidden;
         position: relative;
         gap: 5px;
+        @media (max-width: 550px) {
+          display: none;
+        }
         & > img {
           transform: translateX(-2px);
           position: absolute;
