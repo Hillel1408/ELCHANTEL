@@ -1755,6 +1755,8 @@ main {
 @media (max-width: 550px) {
   .card__tab-1 > button {
     margin-top: 32px;
+    font-size: 14px;
+    height: 33px;
   }
 }
 .card__tab-1 > div > h3 {
@@ -1782,6 +1784,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    font-size: 20px;
   }
 }
 .card__tab-2, .card__tab-3, .card__tab-4 {
