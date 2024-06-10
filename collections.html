@@ -21,7 +21,7 @@
     <div class="header__block-3">
       <button><img src="img/icon-3.svg" alt="" />Список желаний</button>
       <button class="open-entry"><img src="img/icon-4.svg" alt="" /></button>
-      <button><img src="img/icon-5.svg" alt="" /></button>
+      <button class="open-cart"><img src="img/icon-5.svg" alt="" /></button>
     </div>
     <div class="header__menu">
       <ul>
@@ -242,9 +242,23 @@
   <div class="container">
     <div class="collections__slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide collections__slider-slide">1</div>
-        <div class="swiper-slide collections__slider-slide">2</div>
-        <div class="swiper-slide collections__slider-slide">3</div>
+        
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        <div class="swiper-slide collections__slider-slide"><div></div></div>
+        
       </div>
     </div>
     <div class="collections__grid">
@@ -403,12 +417,11 @@
     <script src="js/script.js"></script>
     <script>
       const swiperAboutService = new Swiper(".collections__slider", {
-        loop: "true",
+        loop: true,
         spaceBetween: 166,
         centeredSlides: true,
         centeredSlidesBounds: true,
-        slidesPerView: 1,
-        watchSlidesProgress: true,
+        slidesPerView: 3,
         on: {
           click() {
             swiperAboutService.slideTo(this.clickedIndex);
