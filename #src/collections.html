@@ -18,13 +18,21 @@
     <script>
       const swiperAboutService = new Swiper(".collections__slider", {
         loop: true,
-        spaceBetween: 145,
+        spaceBetween: -140,
         centeredSlides: true,
         centeredSlidesBounds: true,
         slidesPerView: 3,
         on: {
           click() {
             swiperAboutService.slideTo(this.clickedIndex);
+          },
+        },
+        breakpoints: {
+          1240: {
+            spaceBetween: 145,
+          },
+          1024: {
+            spaceBetween: 85,
           },
         },
       });

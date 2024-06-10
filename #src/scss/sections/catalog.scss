@@ -58,6 +58,9 @@
       &:first-child {
         height: 560px;
         background: #d9d9d9;
+        @media (max-width: 1024px) {
+          height: 430px;
+        }
         @media (max-width: 550px) {
           height: 333px;
         }
