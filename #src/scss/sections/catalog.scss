@@ -2,6 +2,12 @@
   background: #f7f3ee;
   padding: 201px 0 88px 0;
   height: 100%;
+  @media (max-width: 1024px) {
+    padding: 150px 0 88px 0;
+  }
+  @media (max-width: 550px) {
+    padding: 70px 0 38px 0;
+  }
   & > div {
     text-align: center;
     & > div {
@@ -10,6 +16,19 @@
       column-gap: 20px;
       row-gap: 96px;
       margin-bottom: 96px;
+      @media (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 51px;
+        margin-bottom: 75px;
+      }
+      @media (max-width: 724px) {
+        grid-template-columns: 1fr;
+        row-gap: 22px;
+        margin-bottom: 41px;
+      }
     }
     & > button {
       font-size: 24px;
@@ -20,6 +39,11 @@
       height: 63px;
       background-color: transparent;
       width: 328px;
+      @media (max-width: 550px) {
+        font-size: 14px;
+        height: 33px;
+        width: 100%;
+      }
     }
   }
   &__item {
