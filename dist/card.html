@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body onclick>
     <div class="header">
@@ -241,7 +242,20 @@
   <div class="card__container">
     <div>
       <div class="card__block-1">
-        <div></div>
+        <div class="card__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card__slider-slide">
+              <img src="img/img-2.png" alt="" />
+            </div>
+            <div class="swiper-slide card__slider-slide">
+              <img src="img/img-2.png" alt="" />
+            </div>
+            <div class="swiper-slide card__slider-slide">
+              <img src="img/img-2.png" alt="" />
+            </div>
+          </div>
+          <div class="card__slider-pagination"></div>
+        </div>
       </div>
       <div class="card__block-2">
         <div>
@@ -458,8 +472,15 @@
   </div>
 </footer>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
+      const cardSlider = new Swiper(".card__slider", {
+        pagination: {
+          el: ".card__slider-pagination",
+          clickable: true,
+        },
+      });
       const tabsItems = document.querySelectorAll(".card__tabs li");
       const tabsBlock = document.querySelectorAll(".card__tab");
       const closeBtns = document.querySelectorAll(".close");
