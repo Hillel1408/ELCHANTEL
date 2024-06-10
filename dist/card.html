@@ -242,9 +242,6 @@
     <div>
       <div class="card__block-1">
         <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
       <div class="card__block-2">
         <div>
@@ -306,7 +303,7 @@
               пиллингуемости следует использовать специальную машинку для
               удаления катышек
             </p>
-            <button><img src="img/icon-7.svg" alt="" /></button>
+            <button class="close"><img src="img/icon-7.svg" alt="" /></button>
           </div>
           <div class="card__tab-3 card__tab" data-id="2">
             <h3>Элегантное платье</h3>
@@ -332,7 +329,7 @@
                 <li><span>Хлопок</span><span></span><span>50%</span></li>
               </ul>
             </div>
-            <button><img src="img/icon-7.svg" alt="" /></button>
+            <button class="close"><img src="img/icon-7.svg" alt="" /></button>
           </div>
           <div class="card__tab-4 card__tab" data-id="3">
             <h3>Элегантное платье</h3>
@@ -353,13 +350,13 @@
               <li>прямая юбка с разрезом</li>
               <li>застежка на потайную молнию сбоку</li>
             </ul>
-            <button><img src="img/icon-7.svg" alt="" /></button>
+            <button class="close"><img src="img/icon-7.svg" alt="" /></button>
           </div>
           <ul class="card__tabs">
-            <li>Описание</li>
-            <li>Уход</li>
-            <li>Детали</li>
-            <li>Доставка и оплата</li>
+            <li data-id="1">Описание</li>
+            <li data-id="2">Уход</li>
+            <li data-id="3">Детали</li>
+            <li data-id="4">Доставка и оплата</li>
           </ul>
         </div>
       </div>
@@ -462,5 +459,32 @@
 </footer>
 
     <script src="js/script.js"></script>
+    <script>
+      const tabsItems = document.querySelectorAll(".card__tabs li");
+      const tabsBlock = document.querySelectorAll(".card__tab");
+      const closeBtns = document.querySelectorAll(".close");
+      for (let elem of tabsItems) {
+        elem.addEventListener("click", function () {
+          for (let elem of tabsItems) {
+            elem.classList.remove("active");
+          }
+          this.classList.add("active");
+          for (let elem of tabsBlock) {
+            elem.classList.remove("active");
+            if (this.dataset.id == elem.dataset.id) {
+              elem.classList.add("active");
+            }
+          }
+        });
+      }
+      for (let elem of closeBtns) {
+        elem.addEventListener("click", () => {
+          for (let item of tabsBlock) {
+            item.classList.remove("active");
+          }
+          tabsBlock[0].classList.add("active");
+        });
+      }
+    </script>
   </body>
 </html>

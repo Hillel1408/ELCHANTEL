@@ -13,5 +13,32 @@
     <main>@@include('./html/card.html')</main>
     @@include('./html/footer.html')
     <script src="js/script.js"></script>
+    <script>
+      const tabsItems = document.querySelectorAll(".card__tabs li");
+      const tabsBlock = document.querySelectorAll(".card__tab");
+      const closeBtns = document.querySelectorAll(".close");
+      for (let elem of tabsItems) {
+        elem.addEventListener("click", function () {
+          for (let elem of tabsItems) {
+            elem.classList.remove("active");
+          }
+          this.classList.add("active");
+          for (let elem of tabsBlock) {
+            elem.classList.remove("active");
+            if (this.dataset.id == elem.dataset.id) {
+              elem.classList.add("active");
+            }
+          }
+        });
+      }
+      for (let elem of closeBtns) {
+        elem.addEventListener("click", () => {
+          for (let item of tabsBlock) {
+            item.classList.remove("active");
+          }
+          tabsBlock[0].classList.add("active");
+        });
+      }
+    </script>
   </body>
 </html>
