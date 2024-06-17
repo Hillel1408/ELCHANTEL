@@ -2983,8 +2983,23 @@ main {
   padding: 201px 0 88px 0;
   height: 100%;
 }
+@media (max-width: 1024px) {
+  .house {
+    padding: 150px 0 88px 0;
+  }
+}
+@media (max-width: 550px) {
+  .house {
+    padding: 70px 0 38px 0;
+  }
+}
 .house > div {
   text-align: center;
+}
+@media (max-width: 550px) {
+  .house > div {
+    padding: 0;
+  }
 }
 .house > div > h1 {
   font-weight: 700;
@@ -2993,8 +3008,34 @@ main {
   color: #000;
   margin-bottom: 64px;
 }
+@media (max-width: 768px) {
+  .house > div > h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 550px) {
+  .house > div > h1 {
+    font-size: 25px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #bbada8;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 17px auto;
+  }
+}
 .house > div > img {
   margin-bottom: 188px;
+}
+@media (max-width: 1500px) {
+  .house > div > img {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .house > div > img {
+    margin-bottom: 20px;
+  }
 }
 .house__block {
   display: -webkit-box;
@@ -3006,12 +3047,46 @@ main {
           flex-direction: column;
   gap: 220px;
 }
+@media (max-width: 550px) {
+  .house__block {
+    gap: 20px;
+  }
+}
 .house__block > div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 76px;
+}
+.house__block > div:first-child > div:last-child {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+@media (max-width: 550px) {
+  .house__block > div:first-child > div:last-child > h2 {
+    text-align: right;
+  }
+}
+@media (max-width: 550px) {
+  .house__block > div:first-child > div:last-child > p {
+    text-align: right;
+  }
+}
+.house__block > div:last-child > div:first-child {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .house__block > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .house__block > div {
+    gap: 20px;
+  }
 }
 .house__block > div > div > img {
   width: 100%;
@@ -3023,11 +3098,29 @@ main {
   margin-bottom: 47px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .house__block > div > div > h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 550px) {
+  .house__block > div > div > h2 {
+    font-size: 27px;
+    padding: 0 17px;
+    margin-bottom: 10px;
+  }
+}
 .house__block > div > div > p {
   font-size: 32px;
   color: #000;
   max-width: 625px;
   text-align: left;
+}
+@media (max-width: 550px) {
+  .house__block > div > div > p {
+    font-size: 16px;
+    padding: 0 17px;
+  }
 }
 
 .shops {
