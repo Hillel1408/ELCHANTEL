@@ -2752,3 +2752,54 @@ main {
 .returns > div > ul > li > ul > li {
   list-style-type: disc;
 }
+
+.house {
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.house > div {
+  text-align: center;
+}
+.house > div > h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 64px;
+}
+.house > div > img {
+  margin-bottom: 188px;
+}
+.house__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 220px;
+}
+.house__block > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+}
+.house__block > div > div > img {
+  width: 100%;
+}
+.house__block > div > div > h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 47px;
+  text-align: left;
+}
+.house__block > div > div > p {
+  font-size: 32px;
+  color: #000;
+  max-width: 625px;
+  text-align: left;
+}
