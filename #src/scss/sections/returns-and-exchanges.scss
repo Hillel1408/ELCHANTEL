@@ -1,0 +1,40 @@
+.returns {
+  padding: 201px 0 88px 0;
+  height: 100%;
+  & > div {
+    text-align: center;
+    & > img {
+      margin-bottom: 55px;
+    }
+    & > h1 {
+      font-weight: 600;
+      font-size: 64px;
+      color: #000;
+      margin-bottom: 55px;
+    }
+    & > p {
+      font-size: 20px;
+      color: #000;
+      text-align: left;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    & > ul {
+      text-align: left;
+      font-size: 20px;
+      color: #000;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      & > li {
+        list-style-type: decimal;
+        & > ul {
+          padding-left: 30px;
+          & > li {
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
+}

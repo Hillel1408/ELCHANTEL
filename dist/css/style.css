@@ -2711,3 +2711,44 @@ main {
   font-size: 20px;
   color: #000;
 }
+
+.returns {
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.returns > div {
+  text-align: center;
+}
+.returns > div > img {
+  margin-bottom: 55px;
+}
+.returns > div > h1 {
+  font-weight: 600;
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 55px;
+}
+.returns > div > p {
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+.returns > div > p:not(:last-child) {
+  margin-bottom: 30px;
+}
+.returns > div > ul {
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.returns > div > ul > li {
+  list-style-type: decimal;
+}
+.returns > div > ul > li > ul {
+  padding-left: 30px;
+}
+.returns > div > ul > li > ul > li {
+  list-style-type: disc;
+}
