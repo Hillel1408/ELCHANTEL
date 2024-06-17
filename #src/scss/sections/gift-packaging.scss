@@ -1,0 +1,50 @@
+.gift-packaging {
+  padding: 201px 0 88px 0;
+  height: 100%;
+  & > div {
+    text-align: center;
+    & > img {
+      margin-bottom: 99px;
+    }
+    & > h2 {
+      font-weight: 600;
+      font-size: 48px;
+      color: #000;
+    }
+    & > button {
+      background: rgba(247, 243, 238, 0.48);
+      color: #271e1d;
+      border: 1.5px solid #271e1d;
+      width: 546px;
+      margin-top: 110px;
+    }
+  }
+  &__block {
+    margin-bottom: 117px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    & > h2 {
+      font-weight: 600;
+      font-size: 48px;
+      color: #000;
+      text-align: left;
+    }
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 76px;
+      & > p {
+        font-size: 32px;
+        color: #000;
+        max-width: 625px;
+        text-align: left;
+      }
+      & > div {
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -2623,3 +2623,59 @@ main {
 .collections__slider-slide.swiper-slide-next > div {
   opacity: 1;
 }
+
+.gift-packaging {
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.gift-packaging > div {
+  text-align: center;
+}
+.gift-packaging > div > img {
+  margin-bottom: 99px;
+}
+.gift-packaging > div > h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+}
+.gift-packaging > div > button {
+  background: rgba(247, 243, 238, 0.48);
+  color: #271e1d;
+  border: 1.5px solid #271e1d;
+  width: 546px;
+  margin-top: 110px;
+}
+.gift-packaging__block {
+  margin-bottom: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 54px;
+}
+.gift-packaging__block > h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  text-align: left;
+}
+.gift-packaging__block > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+}
+.gift-packaging__block > div > p {
+  font-size: 32px;
+  color: #000;
+  max-width: 625px;
+  text-align: left;
+}
+.gift-packaging__block > div > div > img {
+  width: 100%;
+}
