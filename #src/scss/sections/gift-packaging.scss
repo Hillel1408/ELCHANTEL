@@ -1,15 +1,37 @@
 .gift-packaging {
   padding: 201px 0 88px 0;
   height: 100%;
+  @media (max-width: 1024px) {
+    padding: 150px 0 88px 0;
+  }
+  @media (max-width: 550px) {
+    padding: 70px 0 38px 0;
+  }
   & > div {
     text-align: center;
+    @media (max-width: 550px) {
+      padding: 0;
+    }
     & > img {
       margin-bottom: 99px;
+      @media (max-width: 1240px) {
+        width: 100%;
+      }
+      @media (max-width: 550px) {
+        margin-bottom: 20px;
+      }
     }
     & > h2 {
       font-weight: 600;
       font-size: 48px;
       color: #000;
+      @media (max-width: 768px) {
+        font-size: 34px;
+      }
+      @media (max-width: 550px) {
+        font-size: 27px;
+        padding: 0 17px;
+      }
     }
     & > button {
       background: rgba(247, 243, 238, 0.48);
@@ -17,6 +39,13 @@
       border: 1.5px solid #271e1d;
       width: 546px;
       margin-top: 110px;
+      @media (max-width: 690px) {
+        width: 100%;
+      }
+      @media (max-width: 550px) {
+        width: 268px;
+        margin-top: 25px;
+      }
     }
   }
   &__block {
@@ -24,21 +53,58 @@
     display: flex;
     flex-direction: column;
     gap: 54px;
+    @media (max-width: 550px) {
+      gap: 25px;
+      margin-bottom: 25px;
+    }
     & > h2 {
       font-weight: 600;
       font-size: 48px;
       color: #000;
       text-align: left;
+      @media (max-width: 768px) {
+        font-size: 34px;
+      }
+      @media (max-width: 550px) {
+        font-size: 27px;
+        padding: 0 17px;
+        text-align: right;
+      }
     }
     & > div {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 76px;
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
+      @media (max-width: 550px) {
+        gap: 25px;
+      }
+      &:nth-child(2) {
+        & > p {
+          @media (max-width: 550px) {
+            text-align: right;
+          }
+        }
+      }
+      &:last-child {
+        & > p {
+          order: -1;
+        }
+      }
       & > p {
         font-size: 32px;
         color: #000;
         max-width: 625px;
         text-align: left;
+        @media (max-width: 1024px) {
+          max-width: none;
+        }
+        @media (max-width: 550px) {
+          padding: 0 17px;
+          font-size: 16px;
+        }
       }
       & > div {
         & > img {
