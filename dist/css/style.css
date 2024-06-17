@@ -2695,3 +2695,19 @@ main {
   font-size: 20px;
   color: #000;
 }
+
+.product-care {
+  padding: 201px 0 88px 0;
+  height: 100%;
+}
+.product-care > div > h1 {
+  font-weight: 600;
+  font-size: 64px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 55px;
+}
+.product-care > div > p {
+  font-size: 20px;
+  color: #000;
+}
