@@ -2808,6 +2808,35 @@ main {
   padding: 201px 0 88px 0;
   height: 100%;
 }
+@media (max-width: 1024px) {
+  .shops {
+    padding: 150px 0 88px 0;
+  }
+}
+@media (max-width: 550px) {
+  .shops {
+    padding: 70px 0 0 0;
+  }
+}
+.shops > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 550px) {
+  .shops > div {
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  .shops > div > iframe {
+    height: 267px;
+  }
+}
 .shops__block {
   max-width: 910px;
   margin: 0 auto;
@@ -2817,17 +2846,48 @@ main {
   grid-template-columns: 1fr 1fr;
   margin-top: 89px;
 }
+@media (max-width: 830px) {
+  .shops__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .shops__block {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 0;
+  }
+}
 .shops__block > div {
   padding: 20px;
 }
 .shops__block > div:first-child {
   border-right: 1.5px solid #ccbeb1;
 }
+@media (max-width: 830px) {
+  .shops__block > div:first-child {
+    border-right: none;
+    border-bottom: 1.5px solid #ccbeb1;
+  }
+}
+@media (max-width: 550px) {
+  .shops__block > div:first-child {
+    border-bottom: none;
+  }
+}
 .shops__block > div:first-child > h1 {
   font-weight: 700;
   font-size: 48px;
   color: #000;
   margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+  .shops__block > div:first-child > h1 {
+    text-align: center;
+    font-size: 32px;
+  }
 }
 .shops__block > div:first-child > p {
   display: -webkit-box;
@@ -2844,10 +2904,22 @@ main {
 .shops__block > div:first-child > p > a {
   color: #000;
 }
+@media (max-width: 550px) {
+  .shops__block > div:first-child > p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
 .shops__block > div:last-child {
   font-weight: 500;
   font-size: 20px;
   color: #000;
+}
+@media (max-width: 550px) {
+  .shops__block > div:last-child {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 .shops__block > div:last-child > div {
   margin-top: 30px;
@@ -2855,4 +2927,11 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 550px) {
+  .shops__block > div:last-child > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
