@@ -2788,17 +2788,58 @@ main {
   padding: 201px 0 88px 0;
   height: 100%;
 }
+@media (max-width: 1024px) {
+  .returns {
+    padding: 150px 0 88px 0;
+  }
+}
+@media (max-width: 550px) {
+  .returns {
+    padding: 70px 0 38px 0;
+  }
+}
 .returns > div {
   text-align: center;
 }
 .returns > div > img {
   margin-bottom: 55px;
 }
+@media (max-width: 1240px) {
+  .returns > div > img {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .returns > div > img {
+    display: none;
+  }
+}
 .returns > div > h1 {
   font-weight: 600;
   font-size: 64px;
   color: #000;
   margin-bottom: 55px;
+}
+@media (max-width: 1024px) {
+  .returns > div > h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 768px) {
+  .returns > div > h1 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 550px) {
+  .returns > div > h1 {
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bbada8;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+  }
 }
 .returns > div > p {
   font-size: 20px;
@@ -2808,12 +2849,28 @@ main {
 .returns > div > p:not(:last-child) {
   margin-bottom: 30px;
 }
+@media (max-width: 550px) {
+  .returns > div > p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .returns > div > p {
+    font-size: 14px;
+  }
+}
 .returns > div > ul {
   text-align: left;
   font-size: 20px;
   color: #000;
   padding-left: 30px;
   margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+  .returns > div > ul {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
 .returns > div > ul > li {
   list-style-type: decimal;
