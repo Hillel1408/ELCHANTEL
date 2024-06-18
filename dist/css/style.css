@@ -3310,6 +3310,12 @@ main {
   left: 70px;
   right: 70px;
 }
+.news__item-info.absolute-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .news__item-info > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3349,4 +3355,12 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-top: 22px;
+}
+.news__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 114px;
 }

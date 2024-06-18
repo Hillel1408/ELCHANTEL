@@ -39,6 +39,12 @@
         left: 70px;
         right: 70px;
       }
+      &.absolute-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
       & > ul {
         display: flex;
         font-size: 20px;
@@ -74,5 +80,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 22px;
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 114px;
   }
 }
