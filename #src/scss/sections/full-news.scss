@@ -60,18 +60,36 @@
     padding-top: 34px;
     padding-bottom: 110px;
     border-bottom: 1px solid #000;
-    & > p {
-      margin-bottom: 120px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
   }
   &__grid {
     display: grid;
     gap: 40px;
+    &.column-1 {
+      grid-template-columns: 1fr;
+      & > img {
+        height: 440px;
+      }
+    }
     &.column-2 {
       grid-template-columns: 1fr 1fr;
+      & > img {
+        height: 781px;
+      }
+    }
+    &.column-3 {
+      grid-template-columns: 1fr 1.5fr 1fr;
+      margin: 0 -150px;
+      @media (max-width: 1560px) {
+        margin: 0;
+      }
+      & > img {
+        height: 603px;
+      }
     }
     & > img {
-      height: 781px;
       width: 100%;
       object-fit: cover;
     }
