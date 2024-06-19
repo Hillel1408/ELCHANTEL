@@ -3061,10 +3061,12 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 76px;
 }
-.house__block > div:first-child > div:last-child {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+@media (max-width: 550px) {
+  .house__block > div:first-child > div:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 @media (max-width: 550px) {
   .house__block > div:first-child > div:last-child > h2 {
@@ -3076,8 +3078,10 @@ main {
     text-align: right;
   }
 }
-.house__block > div:last-child > div:first-child {
-  display: none;
+@media (max-width: 550px) {
+  .house__block > div:last-child > div:first-child {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .house__block > div {
