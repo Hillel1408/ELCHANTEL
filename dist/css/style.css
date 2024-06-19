@@ -2751,10 +2751,12 @@ main {
     text-align: right;
   }
 }
-.gift-packaging__block > div:last-child > p {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+@media (max-width: 550px) {
+  .gift-packaging__block > div:last-child > p {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 .gift-packaging__block > div > p {
   font-size: 32px;
