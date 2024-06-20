@@ -53,7 +53,9 @@
       &:first-child {
         & > div {
           &:last-child {
-            order: -1;
+            @media (max-width: 550px) {
+              order: -1;
+            }
             & > h2 {
               @media (max-width: 550px) {
                 text-align: right;
@@ -70,7 +72,9 @@
       &:last-child {
         & > div {
           &:first-child {
-            display: none;
+            @media (max-width: 550px) {
+              display: none;
+            }
           }
         }
       }
