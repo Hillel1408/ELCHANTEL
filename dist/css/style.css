@@ -4163,9 +4163,41 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 32px;
 }
-.my-addresses__address > form > input {
+.my-addresses__address > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.my-addresses__address > form > div > span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #271e1d;
+  font-family: var(--second-family);
+}
+.my-addresses__address > form > button {
+  margin-top: 0px;
+  width: 100%;
+}
+.my-addresses__input.required {
+  position: relative;
+}
+.my-addresses__input.required::before {
+  content: "*";
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.my-addresses__input > input {
   padding: 9px 23px;
   width: 100%;
   font-weight: 300;
@@ -4174,6 +4206,58 @@ main {
   border-bottom: 1px solid #000;
   background-color: transparent;
 }
-.my-addresses__address > form > button {
-  margin-top: 120px;
+
+.my-profile__list, .my-profile__wrapper {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: #271e1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.my-profile__list > li.active, .my-profile__wrapper > li.active {
+  font-weight: 700;
+  font-size: 28px;
+  border-bottom: 1px solid #543126;
+  color: #543126;
+}
+.my-profile__wrapper.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.my-profile__radio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6px;
+}
+.my-profile__radio > label {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  color: #271e1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-profile__dimensions {
+  border-top: 1px solid #000;
+  padding-top: 38px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000;
 }

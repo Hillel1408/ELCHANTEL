@@ -16,19 +16,43 @@
     & > form {
       display: flex;
       flex-direction: column;
-      gap: 30px;
-      & > input {
-        padding: 9px 23px;
-        width: 100%;
-        font-weight: 300;
-        font-size: 20px;
-        color: #000;
-        border-bottom: 1px solid #000;
-        background-color: transparent;
+      gap: 32px;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        & > span {
+          font-weight: 700;
+          font-size: 24px;
+          color: #271e1d;
+          font-family: var(--second-family);
+        }
       }
       & > button {
-        margin-top: 120px;
+        margin-top: 0px;
+        width: 100%;
       }
+    }
+  }
+  &__input {
+    &.required {
+      position: relative;
+      &::before {
+        content: "*";
+        position: absolute;
+        left: -24px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    & > input {
+      padding: 9px 23px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 20px;
+      color: #000;
+      border-bottom: 1px solid #000;
+      background-color: transparent;
     }
   }
 }

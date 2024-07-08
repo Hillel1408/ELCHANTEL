@@ -1,0 +1,44 @@
+.my-profile {
+  &__list,
+  &__wrapper {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #271e1d;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    & > li {
+      &.active {
+        font-weight: 700;
+        font-size: 28px;
+        border-bottom: 1px solid #543126;
+        color: #543126;
+      }
+    }
+  }
+  &__wrapper.column {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__radio {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6px;
+    & > label {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 24px;
+      color: #271e1d;
+      display: flex;
+      gap: 7px;
+      align-items: center;
+    }
+  }
+  &__dimensions {
+    border-top: 1px solid #000;
+    padding-top: 38px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+  }
+}
