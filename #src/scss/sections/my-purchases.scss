@@ -1,0 +1,135 @@
+.my-purchases {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 545px;
+  padding: 120px 0 10px 0;
+  height: 100%;
+  &__menu {
+    padding: 105px 39px;
+    & > div {
+      display: flex;
+      gap: 13px;
+      align-items: flex-end;
+      margin-bottom: 46px;
+      & > p {
+        font-weight: 600;
+        font-size: 25px;
+        color: #000;
+      }
+    }
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      & > li {
+        & > a {
+          font-weight: 700;
+          font-size: 36px;
+          color: #000;
+          transition: 0.1s;
+          position: relative;
+          &:hover {
+            padding-left: 13px;
+            color: #543126;
+            &::before {
+              content: "-";
+              position: absolute;
+              left: 0;
+              @media (max-width: 550px) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__orders {
+    background: url("../img/bg-2.png"), #ccbeb1;
+    background-repeat: no-repeat;
+    padding-top: 93px;
+    & > div {
+      max-width: 828px;
+      margin-right: 142px;
+      margin-left: auto;
+    }
+  }
+  &__tabs {
+    display: flex;
+    margin-bottom: 27px;
+    justify-content: center;
+    & > li {
+      width: 330px;
+      font-weight: 600;
+      font-size: 75px;
+      color: #000;
+      text-align: center;
+      &.active {
+        border-bottom: 2px solid #543126;
+      }
+    }
+  }
+  &__tab {
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 24px;
+      color: #000;
+      padding-top: 4px;
+      border-top: 1px solid #ccbeb1;
+      margin-bottom: 10px;
+      & > button {
+        font-weight: 600;
+        font-size: 24px;
+        color: #000;
+        background-color: transparent;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+      }
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+      &:not(:last-child) {
+        border-bottom: 1px solid #ccbeb1;
+      }
+    }
+    &-item {
+      display: grid;
+      grid-template-columns: 228px 1fr 280px;
+      font-weight: 600;
+      font-size: 24px;
+      color: #000;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+        & > div {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 76px;
+          gap: 42px;
+          & > img {
+            width: 100%;
+            height: 82px;
+            object-fit: cover;
+          }
+        }
+      }
+      &:first-child {
+        & > span {
+          &:nth-child(3) {
+            text-align: right;
+          }
+        }
+      }
+      &:not(:first-child) {
+        padding: 28px 0;
+      }
+    }
+  }
+}
