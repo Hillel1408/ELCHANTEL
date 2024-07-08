@@ -23,13 +23,38 @@
       flex-direction: column;
       gap: 3px;
       & > li {
+        & > ul {
+          margin-top: 3px;
+          & > li {
+            position: relative;
+            & > a {
+              font-weight: 700;
+              font-size: 24px;
+              color: #000;
+              &:hover,
+              &.active {
+                padding-left: 13px;
+                color: #543126;
+                &::before {
+                  content: "-";
+                  position: absolute;
+                  left: 0;
+                  @media (max-width: 550px) {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
         & > a {
           font-weight: 700;
           font-size: 36px;
           color: #000;
           transition: 0.1s;
           position: relative;
-          &:hover {
+          &:hover,
+          &.active {
             padding-left: 13px;
             color: #543126;
             &::before {
@@ -81,22 +106,10 @@
       padding-top: 4px;
       border-top: 1px solid #ccbeb1;
       margin-bottom: 10px;
-      & > button {
-        font-weight: 600;
-        font-size: 24px;
-        color: #000;
-        background-color: transparent;
-        display: flex;
-        gap: 14px;
-        align-items: center;
-      }
     }
     &-items {
       display: flex;
       flex-direction: column;
-      &:not(:last-child) {
-        border-bottom: 1px solid #ccbeb1;
-      }
     }
     &-item {
       display: grid;
@@ -104,11 +117,19 @@
       font-weight: 600;
       font-size: 24px;
       color: #000;
+      gap: 30px;
+      &:not(:first-child) {
+        border-bottom: 1px solid #ccbeb1;
+      }
       & > div {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        align-items: flex-end;
+        &:nth-child(3) {
+          gap: 15px;
+        }
+        &:not(:nth-child(3)) {
+          gap: 40px;
+        }
         & > div {
           width: 100%;
           display: grid;
@@ -132,5 +153,14 @@
         padding: 28px 0;
       }
     }
+  }
+  &__btn {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    background-color: transparent;
+    display: flex;
+    gap: 14px;
+    align-items: center;
   }
 }

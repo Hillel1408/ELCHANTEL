@@ -239,14 +239,94 @@
 
     <main><div class="my-purchases">
   <div class="my-purchases__orders">
-    <div class="my-addresses__address">
-      <h1>мои адреса</h1>
-      <p>Добавьте свой адрес, чтобы указать его при оформлении заказа</p>
-      <form action="#">
-        <input type="text" placeholder="" value="г. Москва, ул. Артельная, 3" />
-        <input type="text" placeholder="Добавьте адрес" value="" />
-        <button class="btn">СОХРАНИТЬ</button>
-      </form>
+    <div>
+      <ul class="my-purchases__tabs">
+        <li class="active">заказы</li>
+        <li>покупки</li>
+      </ul>
+      <div class="my-purchases__tab">
+        <div class="my-purchases__tab-head">
+          <button class="my-purchases__btn">
+            сортировать<svg width="11" height="7" viewBox="0 0 11 7">
+              <path
+                d="M1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176776 0.762564 0.176776 1.23744 0.46967 1.53033L1.53033 0.46967ZM6.53033 5.46967L1.53033 0.46967L0.46967 1.53033L5.46967 6.53033L6.53033 5.46967Z"
+                fill="black"
+              />
+              <path
+                d="M10.5303 1.53033C10.8232 1.23744 10.8232 0.762563 10.5303 0.46967C10.2374 0.176777 9.76256 0.176777 9.46967 0.46967L10.5303 1.53033ZM5.53033 6.53033L10.5303 1.53033L9.46967 0.46967L4.46967 5.46967L5.53033 6.53033Z"
+                fill="black"
+              />
+            </svg></button
+          ><span>2 покупки</span>
+        </div>
+        <div class="my-purchases__tab-items">
+          <div class="my-purchases__tab-item">
+            <span>число</span>
+            <span>стоимость</span>
+            <span>название товара</span>
+          </div>
+          <div class="my-purchases__tab-item">
+            <div>
+              <button class="my-purchases__btn">
+                в пути<svg width="11" height="7" viewBox="0 0 11 7">
+                  <path
+                    d="M1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176776 0.762564 0.176776 1.23744 0.46967 1.53033L1.53033 0.46967ZM6.53033 5.46967L1.53033 0.46967L0.46967 1.53033L5.46967 6.53033L6.53033 5.46967Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M10.5303 1.53033C10.8232 1.23744 10.8232 0.762563 10.5303 0.46967C10.2374 0.176777 9.76256 0.176777 9.46967 0.46967L10.5303 1.53033ZM5.53033 6.53033L10.5303 1.53033L9.46967 0.46967L4.46967 5.46967L5.53033 6.53033Z"
+                    fill="black"
+                  />
+                </svg></button
+              ><span>число доставки 25.07.24</span>
+            </div>
+            <div>
+              <span>в пункте выдачи</span
+              ><span>г. Москва ул. Незнакомая, д. 20</span>
+            </div>
+            <div>
+              <span>состав/1 шт.</span>
+              <div>
+                <p>
+                  Название товара <br />Стоимость<br />
+                  арт.: 1010120120
+                </p>
+                <img src="img/img-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="my-purchases__tab-item">
+            <div>
+              <button class="my-purchases__btn">
+                в пути<svg width="11" height="7" viewBox="0 0 11 7">
+                  <path
+                    d="M1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176776 0.762564 0.176776 1.23744 0.46967 1.53033L1.53033 0.46967ZM6.53033 5.46967L1.53033 0.46967L0.46967 1.53033L5.46967 6.53033L6.53033 5.46967Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M10.5303 1.53033C10.8232 1.23744 10.8232 0.762563 10.5303 0.46967C10.2374 0.176777 9.76256 0.176777 9.46967 0.46967L10.5303 1.53033ZM5.53033 6.53033L10.5303 1.53033L9.46967 0.46967L4.46967 5.46967L5.53033 6.53033Z"
+                    fill="black"
+                  />
+                </svg></button
+              ><span>число доставки 25.07.24</span>
+            </div>
+            <div>
+              <span>в пункте выдачи</span
+              ><span>г. Москва ул. Незнакомая, д. 20</span>
+            </div>
+            <div>
+              <span>состав/1 шт.</span>
+              <div>
+                <p>
+                  Название товара <br />Стоимость<br />
+                  арт.: 1010120120
+                </p>
+                <img src="img/img-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="my-purchases__menu">
@@ -259,14 +339,14 @@
     </div>
     <ul>
       <li><a href="#">мои покупки</a></li>
-      <li><a href="#">мои заказы</a></li>
       <li>
-        <a href="#" class="active">мой профиль</a>
+        <a href="#" class="active">мои заказы</a>
         <ul>
-          <li><a href="#">личная информация</a></li>
-          <li><a href="#" class="active">мои адреса</a></li>
+          <li><a href="#">история</a></li>
+          <li><a href="#" class="active">текущие</a></li>
         </ul>
       </li>
+      <li><a href="#">мой профиль</a></li>
       <li><a href="#">выйти</a></li>
     </ul>
   </div>
