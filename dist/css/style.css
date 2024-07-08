@@ -4004,6 +4004,7 @@ main {
   background: url("../img/bg-2.png"), #ccbeb1;
   background-repeat: no-repeat;
   padding-top: 93px;
+  padding-bottom: 93px;
 }
 .my-purchases__orders > div {
   max-width: 828px;
@@ -4109,4 +4110,42 @@ main {
 }
 .my-purchases__tab-item:not(:first-child) {
   padding: 28px 0;
+}
+
+.my-addresses__address {
+  max-width: 437px !important;
+}
+.my-addresses__address > h1 {
+  font-weight: 700;
+  font-size: 75px;
+  color: #000;
+  margin-bottom: 9px;
+}
+.my-addresses__address > p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 22px;
+}
+.my-addresses__address > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.my-addresses__address > form > input {
+  padding: 9px 23px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+.my-addresses__address > form > button {
+  margin-top: 120px;
 }
