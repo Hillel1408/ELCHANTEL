@@ -4419,6 +4419,28 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.order__present-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 242px 70px;
+  grid-template-columns: 242px 70px;
+  gap: 22px;
+}
+.order__present-grid > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+.order__present-grid > span {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
 .order__delivery-buttons {
   max-width: 300px;
   display: -ms-grid;
@@ -4585,4 +4607,105 @@ main {
 }
 .order__date > div > div > div.active {
   border: 1px solid #000;
+}
+
+.address-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(39, 30, 29, 0.86);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.address-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.address-modal__input {
+  border-bottom: 1px solid #ccbeb1;
+  padding: 10px 10px 10px 0;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal__input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal__input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal__input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal__input::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal__input::placeholder {
+  font-weight: 600;
+  font-size: 32px;
+  color: #bbada8;
+}
+.address-modal > div {
+  width: 687px;
+  height: 100%;
+  background: #f7f3ee;
+  margin-left: auto;
+  padding: 89px 149px 89px 129px;
+}
+.address-modal > div > h2 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #543126;
+  margin-bottom: 10px;
+}
+.address-modal > div > p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #543126;
+  margin-bottom: 48px;
+}
+.address-modal > div > button {
+  width: 100%;
+}
+.address-modal > div > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 93px;
+}
+.address-modal > div > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+}
+.address-modal > div > form > div > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
 }

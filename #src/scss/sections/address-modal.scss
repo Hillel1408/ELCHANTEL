@@ -1,0 +1,67 @@
+.address-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(39, 30, 29, 0.86);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__input {
+    border-bottom: 1px solid #ccbeb1;
+    padding: 10px 10px 10px 0;
+    background-color: transparent;
+    width: 100%;
+    &::placeholder {
+      font-weight: 600;
+      font-size: 32px;
+      color: #bbada8;
+    }
+    font-weight: 600;
+    font-size: 32px;
+    color: #bbada8;
+  }
+  & > div {
+    width: 687px;
+    height: 100%;
+    background: #f7f3ee;
+    margin-left: auto;
+    padding: 89px 149px 89px 129px;
+    & > h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: #543126;
+      margin-bottom: 10px;
+    }
+    & > p {
+      font-weight: 600;
+      font-size: 20px;
+      color: #543126;
+      margin-bottom: 48px;
+    }
+    & > button {
+      width: 100%;
+    }
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 93px;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        & > div {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 70px;
+        }
+      }
+    }
+  }
+}
