@@ -258,13 +258,13 @@
         <div>
           <h2>адрес и доставка<img src="img/icon-14.svg" alt="" /></h2>
           <div class="order__delivery-buttons">
-            <div class="active">
+            <div class="find-city-modal-open-btn">
               CDEK <br />
               Курьерская <br />
               доставка <br />
               от ??? ₽
             </div>
-            <div>
+            <div class="pickup-open-btn">
               самовывоз <br />
               из магазина <br />
               от 0 ₽
@@ -276,7 +276,7 @@
         <span>населённый пункт</span>
         <div>
           <p>г. Москва, Московская область</p>
-          <button>изменить адрес</button>
+          <button class="open-address-modal-btn">изменить адрес</button>
         </div>
       </div>
       <div class="order__address">
@@ -383,6 +383,9 @@
 </footer>
  <div class="address-modal">
   <div>
+    <button class="close address-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
     <h2>адрес доставки</h2>
     <p>г. Москва, Московская область</p>
     <form action="#">
@@ -414,8 +417,11 @@
   </div>
 </div>
 
-    <div class="find-city-modal active">
+    <div class="find-city-modal">
   <div>
+    <button class="close find-city-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
     <input type="text" placeholder="найти город" />
     <ul>
       <li>Москва</li>
@@ -438,6 +444,93 @@
   </div>
 </div>
 
+    <div class="pick-up-point-modal">
+  <div>
+    <button class="close pickup-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
+    <div>
+      <h2>
+        пункт выдачи <br />
+        EL’CHANTEL’
+      </h2>
+      <ul>
+        <li>
+          Алексеевская ул., 10/16, <br />
+          Нижний Новгород
+        </li>
+        <li>
+          стоимость доставки - бесплатно <br />
+          дата доставки - сегодня
+        </li>
+        <li>
+          Режим работы: <br />
+          пн-вс 10:00 - 21:00
+        </li>
+        <li>
+          Контактный телефон: <br />
+          <a href="tel:+7(800)2501817 ">+ 7 (800) 250 18 17 </a>
+        </li>
+        <li>
+          Как добраться <br />
+          Лобачевский Plaza
+        </li>
+      </ul>
+    </div>
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf780b836a69f1e5a92f458b01de0faa46d503e96664c4c243be6b54087c9e93&amp;source=constructor"
+      width="100%"
+      height="515"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>
+
     <script src="js/script.js"></script>
+    <script>
+      const openAddressModalBtn = document.querySelector(
+        ".open-address-modal-btn"
+      );
+      const addressModal = document.querySelector(".address-modal");
+      const addressModalCloseBtn = document.querySelector(
+        ".address-modal-close-btn"
+      );
+      openAddressModalBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      addressModalCloseBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const pickupOpenBtn = document.querySelector(".pickup-open-btn");
+      const pickUpPointModal = document.querySelector(".pick-up-point-modal");
+      const pickUpModalCloseBtn = document.querySelector(
+        ".pickup-modal-close-btn"
+      );
+      pickupOpenBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      pickUpModalCloseBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const findCityModalOpenBtn = document.querySelector(
+        ".find-city-modal-open-btn"
+      );
+      const findCityModal = document.querySelector(".find-city-modal");
+      const findCityModalCloseBtn = document.querySelector(
+        ".find-city-modal-close-btn"
+      );
+      findCityModalOpenBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      findCityModalCloseBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+    </script>
   </body>
 </html>

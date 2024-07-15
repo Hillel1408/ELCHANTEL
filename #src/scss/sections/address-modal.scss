@@ -1,5 +1,5 @@
 .address-modal {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -34,6 +34,13 @@
     margin-left: auto;
     padding: 89px 149px 89px 129px;
     overflow: auto;
+    position: relative;
+    & > button {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      background-color: transparent;
+    }
     & > h2 {
       font-weight: 600;
       font-size: 32px;
@@ -45,9 +52,6 @@
       font-size: 20px;
       color: #543126;
       margin-bottom: 48px;
-    }
-    & > button {
-      width: 100%;
     }
     & > form {
       display: flex;

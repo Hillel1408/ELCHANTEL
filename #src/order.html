@@ -13,6 +13,52 @@
     <main>@@include('./html/order.html')</main>
     @@include('./html/footer.html') @@include('./html/address-modal.html')
     @@include('./html/find-city-modal.html')
+    @@include('./html/pick-up-point-modal.html')
     <script src="js/script.js"></script>
+    <script>
+      const openAddressModalBtn = document.querySelector(
+        ".open-address-modal-btn"
+      );
+      const addressModal = document.querySelector(".address-modal");
+      const addressModalCloseBtn = document.querySelector(
+        ".address-modal-close-btn"
+      );
+      openAddressModalBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      addressModalCloseBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const pickupOpenBtn = document.querySelector(".pickup-open-btn");
+      const pickUpPointModal = document.querySelector(".pick-up-point-modal");
+      const pickUpModalCloseBtn = document.querySelector(
+        ".pickup-modal-close-btn"
+      );
+      pickupOpenBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      pickUpModalCloseBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const findCityModalOpenBtn = document.querySelector(
+        ".find-city-modal-open-btn"
+      );
+      const findCityModal = document.querySelector(".find-city-modal");
+      const findCityModalCloseBtn = document.querySelector(
+        ".find-city-modal-close-btn"
+      );
+      findCityModalOpenBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      findCityModalCloseBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+    </script>
   </body>
 </html>

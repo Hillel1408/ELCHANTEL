@@ -4452,6 +4452,7 @@ main {
   font-weight: 700;
   font-size: 20px;
   color: #000;
+  cursor: pointer;
 }
 .order__delivery-buttons > div.active {
   border: 2px solid #543126 !important;
@@ -4610,7 +4611,7 @@ main {
 }
 
 .address-modal {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -4667,6 +4668,13 @@ main {
   margin-left: auto;
   padding: 89px 149px 89px 129px;
   overflow: auto;
+  position: relative;
+}
+.address-modal > div > button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: transparent;
 }
 .address-modal > div > h2 {
   font-weight: 600;
@@ -4679,9 +4687,6 @@ main {
   font-size: 20px;
   color: #543126;
   margin-bottom: 48px;
-}
-.address-modal > div > button {
-  width: 100%;
 }
 .address-modal > div > form {
   display: -webkit-box;
@@ -4712,7 +4717,7 @@ main {
 }
 
 .find-city-modal {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -4735,6 +4740,13 @@ main {
   margin-left: auto;
   padding: 89px 149px 89px 129px;
   overflow: auto;
+  position: relative;
+}
+.find-city-modal > div > button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: transparent;
 }
 .find-city-modal > div > input {
   height: 100px;
@@ -4782,5 +4794,62 @@ main {
   gap: 30px;
   font-weight: 600;
   font-size: 20px;
+  color: #000;
+}
+
+.pick-up-point-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(39, 30, 29, 0.86);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.pick-up-point-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.pick-up-point-modal > div {
+  width: 687px;
+  height: 100%;
+  background: #f7f3ee;
+  margin-left: auto;
+  overflow: auto;
+  position: relative;
+}
+.pick-up-point-modal > div > button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: transparent;
+}
+.pick-up-point-modal > div > div {
+  padding: 89px 149px 89px 129px;
+}
+.pick-up-point-modal > div > div > h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 34px;
+}
+.pick-up-point-modal > div > div > ul {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.pick-up-point-modal > div > div > ul > li > a {
   color: #000;
 }

@@ -1,4 +1,4 @@
-.find-city-modal {
+.pick-up-point-modal {
   position: fixed;
   left: 0;
   right: 0;
@@ -18,7 +18,6 @@
     height: 100%;
     background: #f7f3ee;
     margin-left: auto;
-    padding: 89px 149px 89px 129px;
     overflow: auto;
     position: relative;
     & > button {
@@ -27,28 +26,27 @@
       top: 30px;
       background-color: transparent;
     }
-    & > input {
-      height: 100px;
-      width: 100%;
-      background-color: transparent;
-      border-bottom: 1px solid #000;
-      margin-bottom: 68px;
-      &::placeholder {
+    & > div {
+      padding: 89px 149px 89px 129px;
+      & > h2 {
         font-weight: 600;
-        font-size: 82px;
-        color: #ccbeb1;
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 34px;
       }
-      font-weight: 600;
-      font-size: 82px;
-      color: #ccbeb1;
-    }
-    & > ul {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      font-weight: 600;
-      font-size: 20px;
-      color: #000;
+      & > ul {
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        & > li {
+          & > a {
+            color: #000;
+          }
+        }
+      }
     }
   }
 }
