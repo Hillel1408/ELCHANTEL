@@ -1,0 +1,47 @@
+.find-city-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(39, 30, 29, 0.86);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  & > div {
+    width: 687px;
+    height: 100%;
+    background: #f7f3ee;
+    margin-left: auto;
+    padding: 89px 149px 89px 129px;
+    overflow: auto;
+    & > input {
+      height: 100px;
+      width: 100%;
+      background-color: transparent;
+      border-bottom: 1px solid #000;
+      margin-bottom: 68px;
+      &::placeholder {
+        font-weight: 600;
+        font-size: 82px;
+        color: #ccbeb1;
+      }
+      font-weight: 600;
+      font-size: 82px;
+      color: #ccbeb1;
+    }
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+}
