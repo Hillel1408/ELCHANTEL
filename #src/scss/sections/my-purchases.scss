@@ -208,6 +208,15 @@
         }
       }
     }
+    &.current-orders {
+      & > li {
+        &:nth-child(2) {
+          @media (max-width: 800px) {
+            display: none;
+          }
+        }
+      }
+    }
   }
   &__tab {
     &-head {

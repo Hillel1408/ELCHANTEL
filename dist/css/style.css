@@ -4207,6 +4207,11 @@ main {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .my-purchases__tabs.current-orders > li:nth-child(2) {
+    display: none;
+  }
+}
 .my-purchases__tab-head {
   display: -webkit-box;
   display: -ms-flexbox;
