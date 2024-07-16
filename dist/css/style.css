@@ -3964,7 +3964,7 @@ main {
 }
 @media (max-width: 1024px) {
   .my-purchases {
-    padding: 116px 0 88px 0;
+    padding: 116px 0 0px 0;
   }
 }
 @media (max-width: 550px) {
@@ -4202,6 +4202,11 @@ main {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .my-purchases__tabs.history-orders > li:nth-child(2) {
+    display: none;
+  }
+}
 .my-purchases__tab-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4349,7 +4354,7 @@ main {
 .my-purchases__date, .my-purchases__price {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .my-purchases__date, .my-purchases__price {
     display: block;
   }
@@ -4420,6 +4425,21 @@ main {
   color: #000;
   border-bottom: 1px solid #000;
   background-color: transparent;
+}
+
+.history-orders__shopping-store {
+  display: none;
+}
+@media (max-width: 800px) {
+  .history-orders__shopping-store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .my-profile__list, .my-profile__wrapper {

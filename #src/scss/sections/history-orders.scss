@@ -1,2 +1,9 @@
 .history-orders {
+  &__shopping-store {
+    display: none;
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

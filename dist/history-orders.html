@@ -240,7 +240,7 @@
     <main><div class="my-purchases">
   <div class="my-purchases__orders">
     <div>
-      <ul class="my-purchases__tabs">
+      <ul class="my-purchases__tabs history-orders">
         <li class="active">заказы</li>
         <li>покупки</li>
       </ul>
@@ -275,7 +275,16 @@
             </div>
             <div><span>арт.: 1010210210</span><span></span></div>
             <div>
-              <span>состав/1 шт.</span>
+              <div>
+                <div class="history-orders__shopping-store">
+                  <span>покупка в магазине</span>
+                  <span
+                    >число<br />
+                    12 января</span
+                  >
+                </div>
+                <span>состав/1 шт.</span>
+              </div>
               <div>
                 <p>
                   Название товара <br />Стоимость<br />
@@ -295,7 +304,16 @@
             </div>
             <div><span>арт.: 4165165222</span><span></span></div>
             <div>
-              <span>состав/2 шт.</span>
+              <div>
+                <div class="history-orders__shopping-store">
+                  <span>доставлен</span>
+                  <span
+                    >число<br />
+                    12 января</span
+                  >
+                </div>
+                <span>состав/2 шт.</span>
+              </div>
               <div>
                 <p>
                   Название товара <br />Стоимость<br />
@@ -324,18 +342,20 @@
         пользователя
       </p>
     </div>
-    <ul>
-      <li><a href="#">мои покупки</a></li>
-      <li>
-        <a href="#" class="active">мои заказы</a>
-        <ul>
-          <li><a href="#" class="active">история</a></li>
-          <li><a href="#">текущие</a></li>
-        </ul>
-      </li>
-      <li><a href="#">мой профиль</a></li>
-      <li><a href="#">выйти</a></li>
-    </ul>
+    <div>
+      <ul>
+        <li><a href="#">мои покупки</a></li>
+        <li>
+          <a href="#" class="active">мои заказы</a>
+          <ul>
+            <li><a href="#" class="active">история</a></li>
+            <li><a href="#">текущие</a></li>
+          </ul>
+        </li>
+        <li><a href="#">мой профиль</a></li>
+        <li><a href="#">выйти</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 </main>
