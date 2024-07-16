@@ -240,7 +240,7 @@
     <main><div class="my-purchases">
   <div class="my-purchases__orders">
     <div>
-      <ul class="my-purchases__tabs">
+      <ul class="my-purchases__tabs purchases">
         <li>заказы</li>
         <li class="active">покупки</li>
       </ul>
@@ -269,20 +269,30 @@
             <div><span>12 января</span></div>
             <div><span>10 000 р.</span></div>
             <div>
-              <span>состав/1 шт.</span>
               <div>
-                <p>Название товара <br />арт.: 1010120120</p>
+                <span class="my-purchases__date">05.05.24</span
+                ><span>состав/1 шт.</span>
+              </div>
+              <div>
+                <p>
+                  Название товара <br />арт.: 1010120120 <br />
+                  <span class="my-purchases__price">10 000 ₽</span>
+                </p>
                 <img src="img/img-1.png" alt="" />
               </div>
             </div>
           </div>
           <div class="my-purchases__tab-item">
-            <span>5 января</span>
-            <span>20 000 р.</span>
+            <div><span>5 января</span></div>
+            <div><span>20 000 р.</span></div>
             <div>
+              <span class="my-purchases__date">05.05.24</span>
               <span>состав/1 шт.</span>
               <div>
-                <p>Название товара <br />арт.: 1010120120</p>
+                <p>
+                  Название товара <br />арт.: 1010120120 <br />
+                  <span class="my-purchases__price">10 000 ₽</span>
+                </p>
                 <img src="img/img-1.png" alt="" />
               </div>
               <div>
@@ -294,6 +304,18 @@
         </div>
       </div>
     </div>
+    <button class="my-purchases__back-btn">
+      <svg width="11" height="7" viewBox="0 0 11 7">
+        <path
+          d="M1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176776 0.762564 0.176776 1.23744 0.46967 1.53033L1.53033 0.46967ZM6.53033 5.46967L1.53033 0.46967L0.46967 1.53033L5.46967 6.53033L6.53033 5.46967Z"
+          fill="black"
+        />
+        <path
+          d="M10.5303 1.53033C10.8232 1.23744 10.8232 0.762563 10.5303 0.46967C10.2374 0.176777 9.76256 0.176777 9.46967 0.46967L10.5303 1.53033ZM5.53033 6.53033L10.5303 1.53033L9.46967 0.46967L4.46967 5.46967L5.53033 6.53033Z"
+          fill="black"
+        />
+      </svg>
+    </button>
   </div>
   <div class="my-purchases__menu">
     <div>
@@ -303,12 +325,14 @@
         пользователя
       </p>
     </div>
-    <ul>
-      <li><a href="#" class="active">мои покупки</a></li>
-      <li><a href="#">мои заказы</a></li>
-      <li><a href="#">мой профиль</a></li>
-      <li><a href="#">выйти</a></li>
-    </ul>
+    <div>
+      <ul>
+        <li><a href="#" class="active">мои покупки</a></li>
+        <li><a href="#">мои заказы</a></li>
+        <li><a href="#">мой профиль</a></li>
+        <li><a href="#">выйти</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 </main>
