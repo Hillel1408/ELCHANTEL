@@ -237,29 +237,107 @@
   </div>
 </div>
 
-    <main><div class="shops">
-  <div class="container">
-    <iframe
-      src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf780b836a69f1e5a92f458b01de0faa46d503e96664c4c243be6b54087c9e93&amp;source=constructor"
-      width="100%"
-      height="680"
-      frameborder="0"
-      zoom="2"
-    ></iframe>
-    <div class="shops__block">
-      <div>
-        <h1>EL’CHANTEL’</h1>
-        <p>
-          Контактный телефон:
-          <a href="tel:7(800)2501817">+ 7 (800) 250 18 17</a>
-        </p>
-      </div>
-      <div>
-        <p>Алексеевская ул., 10/16, Нижний Новгород, Россия</p>
-        <p>56.322559, 44.005879</p>
+    <main><div class="order">
+  <div class="order__container">
+    <div class="order__block-1">
+      <div class="order__present">
+        <span>способ оформления</span>
         <div>
-          <p>Как добраться <br />Лобачевский Plaza</p>
-          <p>Режим работы: <br />пн-вс 10:00 - 21:00</p>
+          <h2>оформить как подарок<img src="img/icon-14.svg" alt="" /></h2>
+          <div class="order__present-grid">
+            <label
+              ><input type="checkbox" />Фирменная подарочная упаковка с
+              логотипом</label
+            >
+            <span>1000 р.</span>
+          </div>
+        </div>
+      </div>
+      <div class="order__delivery">
+        <span>способ доставки</span>
+        <div>
+          <h2>адрес и доставка<img src="img/icon-14.svg" alt="" /></h2>
+          <div class="order__delivery-buttons">
+            <div class="find-city-modal-open-btn">
+              CDEK <br />
+              Курьерская <br />
+              доставка <br />
+              от ??? ₽
+            </div>
+            <div class="pickup-open-btn">
+              самовывоз <br />
+              из магазина <br />
+              от 0 ₽
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order__locality">
+        <span>населённый пункт</span>
+        <div>
+          <p>г. Москва, Московская область</p>
+          <button class="open-address-modal-btn">изменить адрес</button>
+        </div>
+      </div>
+      <div class="order__address">
+        <span>ваш адрес</span>
+        <div>
+          <p>ул. Пискунова, 5/80, кв 60, этаж 8</p>
+          <button>изменить<img src="img/icon-14.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="order__comment">
+        <span>комментарий</span>
+        <div>
+          <input type="text" placeholder="информация для курьера" />
+          <p>0/100</p>
+        </div>
+      </div>
+      <div class="order__date">
+        <span>дата и время доставки</span>
+        <div>
+          <div>
+            <div><span>сегодня</span><span>08.07.24</span></div>
+            <div class="active"><span>завтра</span><span>09.07.24</span></div>
+            <div><span>среда</span><span>10.07.24</span></div>
+            <div><span>четверг</span><span>11.07.24</span></div>
+            <div><span>пятница</span><span>12.07.24</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="order__recipient">
+        <span>способ доставки</span>
+        <div>
+          <h2>получатель<img src="img/icon-14.svg" alt="" /></h2>
+          <div>
+            <p>Покровская Рубина Феофановна</p>
+            <p>
+              +7 910 333 22 11 <br />
+              finaRubina@mail.ru
+            </p>
+            <button>ПОДТВЕРДИТЬ ЗАКАЗ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order__block-2">
+      <div class="order__block-2-head">
+        <h2>Ваш заказ <span>/1 шт.</span></h2>
+        <button>изменить</button>
+      </div>
+      <div class="order__block-2-img"><img src="img/img-1.png" alt="" /></div>
+      <div class="order__block-2-total">
+        <ul>
+          <li>
+            <span>сумма</span>
+            <span>20 000 ₽</span>
+          </li>
+          <li><span>доп. улсуги</span><span>1500 ₽</span></li>
+          <li><span>скидка</span><span>- 3000 ₽</span></li>
+        </ul>
+        <div>
+          <span>итого</span>
+          <span>18 500 ₽</span>
         </div>
       </div>
     </div>
@@ -303,7 +381,156 @@
     </div>
   </div>
 </footer>
+ <div class="address-modal">
+  <div>
+    <button class="close address-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
+    <h2>адрес доставки</h2>
+    <p>г. Москва, Московская область</p>
+    <form action="#">
+      <div>
+        <input type="text" class="address-modal__input" placeholder="улица" />
+        <div>
+          <input
+            type="text"
+            class="address-modal__input"
+            placeholder="квартира"
+          />
+          <input
+            type="text"
+            class="address-modal__input"
+            placeholder="домофон"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            class="address-modal__input"
+            placeholder="подъезд"
+          />
+          <input type="text" class="address-modal__input" placeholder="этаж" />
+        </div>
+      </div>
+      <button class="btn">ПРИВЕЗТИ СЮДА</button>
+    </form>
+  </div>
+</div>
+
+    <div class="find-city-modal">
+  <div>
+    <button class="close find-city-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
+    <input type="text" placeholder="найти город" />
+    <ul>
+      <li>Москва</li>
+      <li>Санкт-Петербург</li>
+      <li>Новосибирск</li>
+      <li>Екатеринбург</li>
+      <li>Казань</li>
+      <li>Нижний Новгород</li>
+      <li>Челябинск</li>
+      <li>Красноярск</li>
+      <li>Самара</li>
+      <li>Уфа</li>
+      <li>Ростов-на-Дону</li>
+      <li>Омск</li>
+      <li>Краснодар</li>
+      <li>Воронеж</li>
+      <li>Волгоград</li>
+      <li>Пермь</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="pick-up-point-modal">
+  <div>
+    <button class="close pickup-modal-close-btn">
+      <img src="img/icon-7.svg" alt="" />
+    </button>
+    <div>
+      <h2>
+        пункт выдачи <br />
+        EL’CHANTEL’
+      </h2>
+      <ul>
+        <li>
+          Алексеевская ул., 10/16, <br />
+          Нижний Новгород
+        </li>
+        <li>
+          стоимость доставки - бесплатно <br />
+          дата доставки - сегодня
+        </li>
+        <li>
+          Режим работы: <br />
+          пн-вс 10:00 - 21:00
+        </li>
+        <li>
+          Контактный телефон: <br />
+          <a href="tel:+7(800)2501817 ">+ 7 (800) 250 18 17 </a>
+        </li>
+        <li>
+          Как добраться <br />
+          Лобачевский Plaza
+        </li>
+      </ul>
+    </div>
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf780b836a69f1e5a92f458b01de0faa46d503e96664c4c243be6b54087c9e93&amp;source=constructor"
+      width="100%"
+      height="515"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>
 
     <script src="js/script.js"></script>
+    <script>
+      const openAddressModalBtn = document.querySelector(
+        ".open-address-modal-btn"
+      );
+      const addressModal = document.querySelector(".address-modal");
+      const addressModalCloseBtn = document.querySelector(
+        ".address-modal-close-btn"
+      );
+      openAddressModalBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      addressModalCloseBtn.addEventListener("click", () => {
+        addressModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const pickupOpenBtn = document.querySelector(".pickup-open-btn");
+      const pickUpPointModal = document.querySelector(".pick-up-point-modal");
+      const pickUpModalCloseBtn = document.querySelector(
+        ".pickup-modal-close-btn"
+      );
+      pickupOpenBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      pickUpModalCloseBtn.addEventListener("click", () => {
+        pickUpPointModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      const findCityModalOpenBtn = document.querySelector(
+        ".find-city-modal-open-btn"
+      );
+      const findCityModal = document.querySelector(".find-city-modal");
+      const findCityModalCloseBtn = document.querySelector(
+        ".find-city-modal-close-btn"
+      );
+      findCityModalOpenBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+      findCityModalCloseBtn.addEventListener("click", () => {
+        findCityModal.classList.toggle("active");
+        document.body.classList.toggle("lock");
+      });
+    </script>
   </body>
 </html>
