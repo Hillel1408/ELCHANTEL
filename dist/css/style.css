@@ -4374,11 +4374,25 @@ main {
   color: #000;
   margin-bottom: 9px;
 }
+@media (max-width: 500px) {
+  .my-addresses__address > h1 {
+    font-size: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #bbada8;
+    width: 100%;
+    text-align: center;
+  }
+}
 .my-addresses__address > p {
   font-weight: 300;
   font-size: 20px;
   color: #000;
   margin-bottom: 22px;
+}
+@media (max-width: 500px) {
+  .my-addresses__address > p {
+    font-size: 16px;
+  }
 }
 .my-addresses__address > form {
   display: -webkit-box;
@@ -4390,6 +4404,17 @@ main {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 500px) {
+  .my-addresses__address > form {
+    gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .my-addresses__address > form {
+    max-width: 245px;
+    margin: 0 auto;
+  }
+}
 .my-addresses__address > form > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4400,11 +4425,24 @@ main {
           flex-direction: column;
   gap: 24px;
 }
+@media (max-width: 500px) {
+  .my-addresses__address > form > div {
+    gap: 10px;
+  }
+}
 .my-addresses__address > form > div > span {
   font-weight: 700;
   font-size: 24px;
   color: #271e1d;
   font-family: var(--second-family);
+}
+@media (max-width: 500px) {
+  .my-addresses__address > form > div > span {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+  }
 }
 .my-addresses__address > form > button {
   margin-top: 0px;
@@ -4422,6 +4460,11 @@ main {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media (max-width: 500px) {
+  .my-addresses__input.required::before {
+    left: 0;
+  }
+}
 .my-addresses__input > input {
   padding: 9px 23px;
   width: 100%;
@@ -4430,6 +4473,13 @@ main {
   color: #000;
   border-bottom: 1px solid #000;
   background-color: transparent;
+}
+@media (max-width: 500px) {
+  .my-addresses__input > input {
+    padding: 6px 13px;
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 .history-orders__shopping-store {
@@ -4460,11 +4510,21 @@ main {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .my-profile__list, .my-profile__wrapper {
+    font-size: 12px;
+  }
+}
 .my-profile__list > li.active, .my-profile__wrapper > li.active {
   font-weight: 700;
   font-size: 28px;
   border-bottom: 1px solid #543126;
   color: #543126;
+}
+@media (max-width: 500px) {
+  .my-profile__list > li.active, .my-profile__wrapper > li.active {
+    font-size: 12px;
+  }
 }
 .my-profile__wrapper.column {
   -webkit-box-orient: vertical;
@@ -4482,6 +4542,12 @@ main {
   grid-template-columns: 1fr 1.5fr;
   gap: 6px;
 }
+@media (max-width: 500px) {
+  .my-profile__radio {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 .my-profile__radio > label {
   font-family: var(--second-family);
   font-weight: 700;
@@ -4495,11 +4561,21 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 500px) {
+  .my-profile__radio > label {
+    font-size: 16px;
+  }
+}
 .my-profile__dimensions {
   border-top: 1px solid #000;
   padding-top: 38px;
   padding-bottom: 16px;
   border-bottom: 1px solid #000;
+}
+@media (max-width: 500px) {
+  .my-profile__dimensions {
+    padding-top: 16px;
+  }
 }
 
 .order {

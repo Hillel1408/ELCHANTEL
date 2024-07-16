@@ -8,12 +8,18 @@
     display: flex;
     gap: 10px;
     align-items: flex-end;
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
     & > li {
       &.active {
         font-weight: 700;
         font-size: 28px;
         border-bottom: 1px solid #543126;
         color: #543126;
+        @media (max-width: 500px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -25,6 +31,9 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 6px;
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
     & > label {
       font-family: var(--second-family);
       font-weight: 700;
@@ -33,6 +42,9 @@
       display: flex;
       gap: 7px;
       align-items: center;
+      @media (max-width: 500px) {
+        font-size: 16px;
+      }
     }
   }
   &__dimensions {
@@ -40,5 +52,8 @@
     padding-top: 38px;
     padding-bottom: 16px;
     border-bottom: 1px solid #000;
+    @media (max-width: 500px) {
+      padding-top: 16px;
+    }
   }
 }
