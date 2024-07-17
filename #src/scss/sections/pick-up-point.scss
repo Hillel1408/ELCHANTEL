@@ -20,19 +20,46 @@
     margin-left: auto;
     overflow: auto;
     position: relative;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    & > iframe {
+      height: 515px;
+      @media (max-width: 500px) {
+        height: 267px;
+      }
+    }
     & > button {
       position: absolute;
       right: 30px;
       top: 30px;
       background-color: transparent;
+      @media (max-width: 768px) {
+        & > img {
+          width: 20px;
+          height: 20px;
+          top: 22px;
+          right: 28px;
+        }
+      }
     }
     & > div {
       padding: 89px 149px 89px 129px;
+      @media (max-width: 768px) {
+        padding: 70px 50px;
+      }
+      @media (max-width: 500px) {
+        padding: 22px 28px;
+      }
       & > h2 {
         font-weight: 600;
         font-size: 40px;
         color: #000;
         margin-bottom: 34px;
+        @media (max-width: 500px) {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
       }
       & > ul {
         font-weight: 600;
@@ -41,6 +68,10 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (max-width: 500px) {
+          font-size: 16px;
+          gap: 18px;
+        }
         & > li {
           & > a {
             color: #000;

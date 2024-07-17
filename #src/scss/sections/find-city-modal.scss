@@ -21,11 +21,26 @@
     padding: 89px 149px 89px 129px;
     overflow: auto;
     position: relative;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 70px 50px;
+    }
+    @media (max-width: 500px) {
+      padding: 22px 28px;
+    }
     & > button {
       position: absolute;
       right: 30px;
       top: 30px;
       background-color: transparent;
+      @media (max-width: 768px) {
+        & > img {
+          width: 20px;
+          height: 20px;
+          top: 22px;
+          right: 28px;
+        }
+      }
     }
     & > input {
       height: 100px;
@@ -33,14 +48,26 @@
       background-color: transparent;
       border-bottom: 1px solid #000;
       margin-bottom: 68px;
+      @media (max-width: 500px) {
+        margin-bottom: 30px;
+        height: auto;
+        padding: 10px 10px 10px 0;
+        margin-top: 30px;
+      }
       &::placeholder {
         font-weight: 600;
         font-size: 82px;
         color: #ccbeb1;
+        @media (max-width: 500px) {
+          font-size: 16px;
+        }
       }
       font-weight: 600;
       font-size: 82px;
       color: #ccbeb1;
+      @media (max-width: 500px) {
+        font-size: 16px;
+      }
     }
     & > ul {
       display: flex;

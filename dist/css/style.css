@@ -5207,6 +5207,11 @@ main {
   font-size: 32px;
   color: #bbada8;
 }
+@media (max-width: 500px) {
+  .address-modal__input {
+    padding: 8px 8px 8px 0;
+  }
+}
 .address-modal__input::-webkit-input-placeholder {
   font-weight: 600;
   font-size: 32px;
@@ -5232,6 +5237,28 @@ main {
   font-size: 32px;
   color: #bbada8;
 }
+@media (max-width: 500px) {
+  .address-modal__input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .address-modal__input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .address-modal__input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .address-modal__input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .address-modal__input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .address-modal__input {
+    font-size: 16px;
+  }
+}
 .address-modal > div {
   width: 687px;
   height: 100%;
@@ -5241,11 +5268,30 @@ main {
   overflow: auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .address-modal > div {
+    width: 100%;
+    padding: 70px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .address-modal > div {
+    padding: 22px 28px;
+  }
+}
 .address-modal > div > button {
   position: absolute;
   right: 30px;
   top: 30px;
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .address-modal > div > button > img {
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 28px;
+  }
 }
 .address-modal > div > h2 {
   font-weight: 600;
@@ -5253,11 +5299,23 @@ main {
   color: #543126;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .address-modal > div > h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
 .address-modal > div > p {
   font-weight: 600;
   font-size: 20px;
   color: #543126;
   margin-bottom: 48px;
+}
+@media (max-width: 500px) {
+  .address-modal > div > p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
 }
 .address-modal > div > form {
   display: -webkit-box;
@@ -5269,6 +5327,11 @@ main {
           flex-direction: column;
   gap: 93px;
 }
+@media (max-width: 500px) {
+  .address-modal > div > form {
+    gap: 24px;
+  }
+}
 .address-modal > div > form > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5279,12 +5342,28 @@ main {
           flex-direction: column;
   gap: 45px;
 }
+@media (max-width: 500px) {
+  .address-modal > div > form > div {
+    gap: 28px;
+  }
+}
 .address-modal > div > form > div > div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
+}
+@media (max-width: 768px) {
+  .address-modal > div > form > div > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .address-modal > div > form > div > div {
+    gap: 28px;
+  }
 }
 
 .find-city-modal {
@@ -5313,11 +5392,30 @@ main {
   overflow: auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .find-city-modal > div {
+    width: 100%;
+    padding: 70px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .find-city-modal > div {
+    padding: 22px 28px;
+  }
+}
 .find-city-modal > div > button {
   position: absolute;
   right: 30px;
   top: 30px;
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .find-city-modal > div > button > img {
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 28px;
+  }
 }
 .find-city-modal > div > input {
   height: 100px;
@@ -5328,6 +5426,14 @@ main {
   font-weight: 600;
   font-size: 82px;
   color: #ccbeb1;
+}
+@media (max-width: 500px) {
+  .find-city-modal > div > input {
+    margin-bottom: 30px;
+    height: auto;
+    padding: 10px 10px 10px 0;
+    margin-top: 30px;
+  }
 }
 .find-city-modal > div > input::-webkit-input-placeholder {
   font-weight: 600;
@@ -5353,6 +5459,28 @@ main {
   font-weight: 600;
   font-size: 82px;
   color: #ccbeb1;
+}
+@media (max-width: 500px) {
+  .find-city-modal > div > input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .find-city-modal > div > input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .find-city-modal > div > input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .find-city-modal > div > input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .find-city-modal > div > input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .find-city-modal > div > input {
+    font-size: 16px;
+  }
 }
 .find-city-modal > div > ul {
   display: -webkit-box;
@@ -5393,20 +5521,57 @@ main {
   overflow: auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .pick-up-point-modal > div {
+    width: 100%;
+  }
+}
+.pick-up-point-modal > div > iframe {
+  height: 515px;
+}
+@media (max-width: 500px) {
+  .pick-up-point-modal > div > iframe {
+    height: 267px;
+  }
+}
 .pick-up-point-modal > div > button {
   position: absolute;
   right: 30px;
   top: 30px;
   background-color: transparent;
 }
+@media (max-width: 768px) {
+  .pick-up-point-modal > div > button > img {
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 28px;
+  }
+}
 .pick-up-point-modal > div > div {
   padding: 89px 149px 89px 129px;
+}
+@media (max-width: 768px) {
+  .pick-up-point-modal > div > div {
+    padding: 70px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .pick-up-point-modal > div > div {
+    padding: 22px 28px;
+  }
 }
 .pick-up-point-modal > div > div > h2 {
   font-weight: 600;
   font-size: 40px;
   color: #000;
   margin-bottom: 34px;
+}
+@media (max-width: 500px) {
+  .pick-up-point-modal > div > div > h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 .pick-up-point-modal > div > div > ul {
   font-weight: 600;
@@ -5420,6 +5585,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+}
+@media (max-width: 500px) {
+  .pick-up-point-modal > div > div > ul {
+    font-size: 16px;
+    gap: 18px;
+  }
 }
 .pick-up-point-modal > div > div > ul > li > a {
   color: #000;
