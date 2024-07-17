@@ -90,10 +90,17 @@
                   &.active {
                     padding-left: 13px;
                     color: #543126;
+                    @media (max-width: 500px) {
+                      padding-left: 0;
+                      color: #000;
+                    }
                     &::before {
                       content: "-";
                       position: absolute;
                       left: 0;
+                      @media (max-width: 500px) {
+                        display: none;
+                      }
                     }
                   }
                 }
@@ -112,10 +119,17 @@
               &.active {
                 padding-left: 13px;
                 color: #543126;
+                @media (max-width: 500px) {
+                  padding-left: 0;
+                  color: #000;
+                }
                 &::before {
                   content: "-";
                   position: absolute;
                   left: 0;
+                  @media (max-width: 500px) {
+                    display: none;
+                  }
                 }
               }
             }

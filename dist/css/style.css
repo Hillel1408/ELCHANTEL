@@ -4086,10 +4086,21 @@ main {
   padding-left: 13px;
   color: #543126;
 }
+@media (max-width: 500px) {
+  .my-purchases__menu > div:last-child > ul > li > ul > li > a:hover, .my-purchases__menu > div:last-child > ul > li > ul > li > a.active {
+    padding-left: 0;
+    color: #000;
+  }
+}
 .my-purchases__menu > div:last-child > ul > li > ul > li > a:hover::before, .my-purchases__menu > div:last-child > ul > li > ul > li > a.active::before {
   content: "-";
   position: absolute;
   left: 0;
+}
+@media (max-width: 500px) {
+  .my-purchases__menu > div:last-child > ul > li > ul > li > a:hover::before, .my-purchases__menu > div:last-child > ul > li > ul > li > a.active::before {
+    display: none;
+  }
 }
 .my-purchases__menu > div:last-child > ul > li > a {
   font-weight: 700;
@@ -4108,10 +4119,21 @@ main {
   padding-left: 13px;
   color: #543126;
 }
+@media (max-width: 500px) {
+  .my-purchases__menu > div:last-child > ul > li > a:hover, .my-purchases__menu > div:last-child > ul > li > a.active {
+    padding-left: 0;
+    color: #000;
+  }
+}
 .my-purchases__menu > div:last-child > ul > li > a:hover::before, .my-purchases__menu > div:last-child > ul > li > a.active::before {
   content: "-";
   position: absolute;
   left: 0;
+}
+@media (max-width: 500px) {
+  .my-purchases__menu > div:last-child > ul > li > a:hover::before, .my-purchases__menu > div:last-child > ul > li > a.active::before {
+    display: none;
+  }
 }
 .my-purchases__orders {
   background: url("../img/bg-2.png"), #ccbeb1;
