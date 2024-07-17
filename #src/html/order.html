@@ -2,9 +2,10 @@
   <div class="order__container">
     <div class="order__block-1">
       <div class="order__present">
-        <span>способ оформления</span>
+        <span class="order__title desktop">способ оформления</span>
         <div>
           <h2>оформить как подарок<img src="img/icon-14.svg" alt="" /></h2>
+          <span class="order__title mobile">способ оформления</span>
           <div class="order__present-grid">
             <label
               ><input type="checkbox" />Фирменная подарочная упаковка с
@@ -15,9 +16,10 @@
         </div>
       </div>
       <div class="order__delivery">
-        <span>способ доставки</span>
+        <span class="order__title desktop">способ доставки</span>
         <div>
           <h2>адрес и доставка<img src="img/icon-14.svg" alt="" /></h2>
+          <span class="order__title mobile">способ доставки</span>
           <div class="order__delivery-buttons">
             <div class="find-city-modal-open-btn">
               CDEK <br />
@@ -34,7 +36,7 @@
         </div>
       </div>
       <div class="order__locality">
-        <span>населённый пункт</span>
+        <span order__title>населённый пункт</span>
         <div>
           <p>г. Москва, Московская область</p>
           <button class="open-address-modal-btn">изменить адрес</button>
@@ -65,9 +67,15 @@
             <div><span>пятница</span><span>12.07.24</span></div>
           </div>
         </div>
+        <input
+          type="text"
+          class="input"
+          placeholder=""
+          value="Завтра 12.05.24"
+        />
       </div>
       <div class="order__recipient">
-        <span>способ доставки</span>
+        <span></span>
         <div>
           <h2>получатель<img src="img/icon-14.svg" alt="" /></h2>
           <div>
@@ -76,12 +84,16 @@
               +7 910 333 22 11 <br />
               finaRubina@mail.ru
             </p>
-            <button>ПОДТВЕРДИТЬ ЗАКАЗ</button>
           </div>
         </div>
       </div>
+      <div>
+        <span></span>
+        <button class="order__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+      </div>
     </div>
     <div class="order__block-2">
+      <h1 class="order__h1">Оформление заказа</h1>
       <div class="order__block-2-head">
         <h2>Ваш заказ <span>/1 шт.</span></h2>
         <button>изменить</button>
