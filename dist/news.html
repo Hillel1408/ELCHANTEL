@@ -7,20 +7,55 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .header__theme {
+        display: flex !important;
+      }
+    </style>
   </head>
   <body onclick>
     <div class="header">
   <div class="container">
     <div class="header__block-1">
-      <button class="open-menu"><img src="img/icon-1.svg" alt="" />Меню</button>
+      <button class="open-menu">
+        <img src="img/icon-1.svg" alt="" class="light-theme" /><img
+          src="img/icon-17.svg"
+          alt=""
+          class="dark-theme"
+        />Меню
+      </button>
       <div class="header__block-2 mobile"><a href="#">EL’CHANTEL’</a></div>
-      <button><img src="img/icon-2.svg" alt="" />Поиск</button>
+      <button>
+        <img src="img/icon-2.svg" alt="" class="light-theme" /><img
+          src="img/icon-18.svg"
+          alt=""
+          class="dark-theme"
+        />
+        Поиск
+      </button>
     </div>
     <div class="header__block-2 desktop"><a href="#">EL’CHANTEL’</a></div>
-    <div class="header__block-3">
-      <button><img src="img/icon-3.svg" alt="" />Список желаний</button>
-      <button class="open-entry"><img src="img/icon-4.svg" alt="" /></button>
-      <button class="open-cart"><img src="img/icon-5.svg" alt="" /></button>
+    <div class="header__block-3-wrapper">
+      <button class="header__theme">
+        <img src="img/icon-15.svg" alt="" /><img src="img/icon-16.svg" alt="" />
+      </button>
+      <div class="header__block-3">
+        <button>
+          <img src="img/icon-3.svg" alt="" class="light-theme" /><img
+            src="img/icon-19.svg"
+            alt=""
+            class="dark-theme"
+          />Список желаний
+        </button>
+        <button class="open-entry">
+          <img src="img/icon-4.svg" alt="" class="light-theme" />
+          <img src="img/icon-20.svg" alt="" class="dark-theme" />
+        </button>
+        <button class="open-cart">
+          <img src="img/icon-5.svg" alt="" class="light-theme" />
+          <img src="img/icon-21.svg" alt="" class="dark-theme" />
+        </button>
+      </div>
     </div>
     <div class="header__menu">
       <ul>
@@ -406,5 +441,12 @@
 </footer>
 
     <script src="js/script.js"></script>
+    <script>
+      const btn = document.querySelector(".header__theme");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+        this.classList.toggle("dark-theme");
+      });
+    </script>
   </body>
 </html>
